@@ -1,97 +1,127 @@
+# Fallback CV (used only if JSON resume not loaded)
 - title: General Information
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Ananda Dwi Rahmawati
+    - name: Title
+      value: Senior Cloud & DevOps Engineer
+    - name: Location
+      value: Singapore, SG
+    - name: Email
+      value: ananda.dwirahmawati313@gmail.com
+    - name: Phone
+      value: +65 9358-2201
+    - name: Profiles
+      value: GitHub (misskecupbung), LinkedIn (anandadwir), WordPress (blog), SpeakerDeck, Twitter, Facebook
 
-- title: Education
-  type: time_table
+- title: Summary
+  type: list
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+    - Senior Cloud & DevOps Engineer (6+ yrs) across AWS, Azure, GCP. Expertise in container platforms (EKS, ECS, Kubernetes), IaC (Terraform, Pulumi), CI/CD (GitLab, Jenkins, ArgoCD), cost optimization (70%+), security & compliance automation, and platform reliability. AWS Container Hero & Google Developer Expert.
+
+- title: Core Skills
+  type: list
+  contents:
+    - Multi-Cloud Architecture (AWS, Azure, GCP)
+    - Kubernetes / Containers (EKS, ECS, Fargate, OpenShift)
+    - IaC & Automation (Terraform, Pulumi, CloudFormation, Ansible)
+    - CI/CD & DevSecOps (GitLab, GitHub Actions, ArgoCD, SonarQube, Snyk)
+    - Observability (CloudWatch, X-Ray, ELK, Prometheus, Grafana, OpenTelemetry)
+    - Security & Compliance (IAM, KMS, GuardDuty, Security Hub, WAF, OIDC)
+    - Networking (VPC, Transit Gateway, PrivateLink, DNS, Load Balancing)
+    - Scripting & Languages (Python, Bash, Go, Java)
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Cloud & DevOps Engineer – Cloud File Transfer
+      institution: ACP Group / GovTech Singapore
+      year: Oct 2024 – Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Increased IaC coverage 54%→85% (Terraform & Pulumi).
+        - Migrated CI/CD to OIDC removing long-lived credentials.
+        - Implemented observability stack (CloudWatch, X-Ray, ELK, Synthetics).
+        - Built multi-stage GitLab pipelines (drift detection, security gates).
+        - Scaled ECS & RDS; load/perf tested 100+ services.
+        - Automated compliance scoring for 200+ projects.
+        - Reduced latency 35% via CloudFront & network tuning.
+        - Automated ECR image scanning & patching (200+ vulns remediated).
+    - title: Cloud & DevOps Engineer
+      institution: Activate Interactive Pte Ltd
+      year: Oct 2023 – Sept 2024
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Migrated on-prem to AWS; $500K+ annual savings.
+        - Raised IaC coverage to 90%; multi-cloud (Alibaba, Azure).
+        - Delivered DevSecOps pipelines for 100+ microservices.
+        - Advanced monitoring & auto-recovery (Prometheus, ELK, CloudWatch).
+        - Cost optimization via Trusted Advisor, Config Rules, Lambda.
+        - Scrum Master improving velocity by 35%.
+    - title: Cloud Infrastructure Engineer
+      institution: PT Boer Technology
+      year: Jul 2019 – Sept 2023
       description:
+        - Architected multi-region OpenStack/Ceph private cloud (99.9% availability).
+        - Automation with Python, Bash, Go for provisioning & lifecycle.
+        - Monitoring pipelines (Prometheus/Grafana/Alertmanager) 99.5–99.9% uptime.
+        - Containerized legacy apps → 10× deployment frequency.
+        - Multi-cloud migrations (AWS, GCP, Alibaba) 40% cost & 60% perf gains.
+    - title: Trainer & Cloud Instructor (Freelance)
+      institution: Various (Mastercard Academy, Google Bangkit)
+      year: 2021 – Present
+      description:
+        - 1000+ professionals trained (cloud, DevOps, security).
+        - Hands-on labs & certification prep with 95%+ positive feedback.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Education
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Master of Computer Science (Distance Learning)
+      institution: University of Texas at Austin
+      year: 2025
+      description:
+        - GPA 3.77/4.00
+    - title: S.Tr.Kom Software Engineering Technology
+      institution: Universitas Gadjah Mada, Yogyakarta, Indonesia
+      year: 2019 – 2023
+      description:
+        - GPA 3.84/4.00
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+- title: Certifications
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Terraform Associate (003); LFCS; LFCA; AWS Cloud Practitioner; AWS SA Associate; Security+; GCP ACE; GCP PCA; Azure AZ-900; Azure AZ-104; OCI Foundations; OCI Cloud Ops; Alibaba ACA Security; Alibaba ACA Cloud Computing; MikroTik (MTCNA/MTCRE/MTCWE/MTCSE/MTCTCE/MTCUME/MTCINE); LSP TIK Junior Networking; Certified OpenStack Administrator (COA).
+
+- title: Awards
+  type: list
+  contents:
+    - AWS Container Hero (2023–present)
+    - Google Developer Expert – Cloud Modern Architecture (2023–present)
+    - CNCF Ambassador (2023–2024)
+
+- title: Community & Speaking
+  type: list
+  contents:
+    - Speaker: Google Cloud Summit Jakarta 2025 (Ray + Kueue scheduling).
+    - Speaker: AWS Summit Singapore 2024 (Multi-Cluster Security EKS).
+    - Speaker: Azure Community Conf 2021 (Spinnaker CD on Azure).
+    - Ongoing talks: https://misskecupbung.wordpress.com/talks
+
+- title: Organizations
+  type: list
+  contents:
+    - Kubernetes & Cloud Native Indonesia (2023–present)
+    - AWS User Group Indonesia (2020–present)
+    - Google Developers (2019–present)
+    - BlankOn Linux Indonesia – Infrastructure Team (2017–2020)
+
+- title: Social / Links
+  type: list
+  contents:
+    - Blog: https://misskecupbung.wordpress.com
+    - GitHub: https://github.com/misskecupbung
+    - LinkedIn: https://linkedin.com/in/anandadwir
+    - SpeakerDeck: https://speakerdeck.com/misskecupbung
+    - Twitter: https://twitter.com/misskecupbung
+    - Facebook: https://facebook.com/misskecupbung
+
