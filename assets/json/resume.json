@@ -105,34 +105,34 @@
     }
   ],
   "certificates": [
-    {"name": "HashiCorp Terraform Associate (003)", "issuer": "HashiCorp"},
-    {"name": "LFCS", "issuer": "Linux Foundation"},
-    {"name": "LFCA", "issuer": "Linux Foundation"},
-    {"name": "AWS Cloud Practitioner", "issuer": "Amazon"},
-    {"name": "AWS Solutions Architect – Associate", "issuer": "Amazon"},
-    {"name": "CompTIA Security+", "issuer": "CompTIA"},
-    {"name": "Google Associate Cloud Engineer", "issuer": "Google"},
-    {"name": "Google Professional Cloud Architect", "issuer": "Google"},
-    {"name": "Azure Fundamentals AZ-900", "issuer": "Microsoft"},
-    {"name": "Azure Administrator AZ-104", "issuer": "Microsoft"},
-    {"name": "OCI Foundations Associate", "issuer": "Oracle"},
-    {"name": "OCI Cloud Operations Associate", "issuer": "Oracle"},
-    {"name": "Alibaba ACA Security Associate", "issuer": "Alibaba"},
-    {"name": "Alibaba ACA Cloud Computing", "issuer": "Alibaba"},
-    {"name": "MikroTik MTCNA", "issuer": "MikroTik"},
-    {"name": "MikroTik MTCRE", "issuer": "MikroTik"},
-    {"name": "MikroTik MTCWE", "issuer": "MikroTik"},
-    {"name": "MikroTik MTCSE", "issuer": "MikroTik"},
-    {"name": "MikroTik MTCTCE", "issuer": "MikroTik"},
-    {"name": "MikroTik MTCUME", "issuer": "MikroTik"},
-    {"name": "MikroTik MTCINE", "issuer": "MikroTik"},
-    {"name": "LSP TIK Junior Networking", "issuer": "LSP TIK Indonesia"},
-    {"name": "Certified OpenStack Administrator (COA)", "issuer": "OpenStack Foundation"}
+    { "name": "HashiCorp Terraform Associate (003)", "issuer": "HashiCorp" },
+    { "name": "LFCS", "issuer": "Linux Foundation" },
+    { "name": "LFCA", "issuer": "Linux Foundation" },
+    { "name": "AWS Cloud Practitioner", "issuer": "Amazon" },
+    { "name": "AWS Solutions Architect – Associate", "issuer": "Amazon" },
+    { "name": "CompTIA Security+", "issuer": "CompTIA" },
+    { "name": "Google Associate Cloud Engineer", "issuer": "Google" },
+    { "name": "Google Professional Cloud Architect", "issuer": "Google" },
+    { "name": "Azure Fundamentals AZ-900", "issuer": "Microsoft" },
+    { "name": "Azure Administrator AZ-104", "issuer": "Microsoft" },
+    { "name": "OCI Foundations Associate", "issuer": "Oracle" },
+    { "name": "OCI Cloud Operations Associate", "issuer": "Oracle" },
+    { "name": "Alibaba ACA Security Associate", "issuer": "Alibaba" },
+    { "name": "Alibaba ACA Cloud Computing", "issuer": "Alibaba" },
+    { "name": "MikroTik MTCNA", "issuer": "MikroTik" },
+    { "name": "MikroTik MTCRE", "issuer": "MikroTik" },
+    { "name": "MikroTik MTCWE", "issuer": "MikroTik" },
+    { "name": "MikroTik MTCSE", "issuer": "MikroTik" },
+    { "name": "MikroTik MTCTCE", "issuer": "MikroTik" },
+    { "name": "MikroTik MTCUME", "issuer": "MikroTik" },
+    { "name": "MikroTik MTCINE", "issuer": "MikroTik" },
+    { "name": "LSP TIK Junior Networking", "issuer": "LSP TIK Indonesia" },
+    { "name": "Certified OpenStack Administrator (COA)", "issuer": "OpenStack Foundation" }
   ],
   "awards": [
-    {"title": "AWS Container Hero", "date": "2023-01-01", "awarder": "Amazon Web Services"},
-    {"title": "Google Developer Expert – Cloud Modern Architecture", "date": "2023-01-01", "awarder": "Google"},
-    {"title": "CNCF Ambassador", "date": "2023-01-01", "awarder": "CNCF"}
+    { "title": "AWS Container Hero", "date": "2023-01-01", "awarder": "Amazon Web Services" },
+    { "title": "Google Developer Expert – Cloud Modern Architecture", "date": "2023-01-01", "awarder": "Google" },
+    { "title": "CNCF Ambassador", "date": "2023-01-01", "awarder": "CNCF" }
   ],
   "skills": [
     {
@@ -153,15 +153,10 @@
     }
   ],
   "languages": [
-    {"language": "English", "fluency": "Professional"},
-    {"language": "Indonesian", "fluency": "Native"}
+    { "language": "English", "fluency": "Professional" },
+    { "language": "Indonesian", "fluency": "Native" }
   ],
-  "interests": [
-    {"name": "Cloud Architecture"},
-    {"name": "Platform Engineering"},
-    {"name": "DevSecOps"},
-    {"name": "Open Source"}
-  ],
+  "interests": [{ "name": "Cloud Architecture" }, { "name": "Platform Engineering" }, { "name": "DevSecOps" }, { "name": "Open Source" }],
   "projects": [
     {
       "name": "Infrastructure Compliance Scoring Automation",
