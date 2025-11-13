@@ -45,3 +45,16 @@ nav_order: 4
   {% endfor %}
 </div>
 {% endif %}
+
+{% if site.github and site.github.public_repositories %}
+
+## All Public Repositories
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {%- assign sorted_repos = site.github.public_repositories | sort: 'stargazers_count' | reverse -%}
+  {%- for repo in sorted_repos -%}
+    {% include repository/repo.liquid repository=repo.full_name %}
+  {%- endfor -%}
+</div>
+<p class="mt-3"><em>Listing generated automatically via jekyll-github-metadata. To customize or limit, populate <code>github_repos:</code> in <code>_data/repositories.yml</code>.</em></p>
+{% endif %}

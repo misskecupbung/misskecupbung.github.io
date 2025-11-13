@@ -1,0 +1,28 @@
+# Conference & community talks
+- title: Ray + Kueue Scheduling for AI/ML Efficiency
+  event: Google Cloud Summit Jakarta
+  location: Jakarta, Indonesia
+  date: 2025-06-12
+  role: Speaker
+  description: Showcased scalable distributed scheduling patterns combining Ray and Kueue for cost-efficient ML workloads.
+  tags: [cloud, kubernetes, ml, scheduling]
+  slides_url: https://misskecupbung.wordpress.com/talks/ray-kueue-summit-2025
+  video_url:
+- title: Multi-Cluster Security Patterns on Amazon EKS
+  event: AWS Summit Singapore
+  location: Singapore
+  date: 2024-05-08
+  role: Speaker
+  description: Presented strategies for identity, network isolation, and supply-chain security across multiple EKS clusters.
+  tags: [aws, eks, security, devsecops]
+  slides_url: https://misskecupbung.wordpress.com/talks/eks-security-summit-2024
+  video_url:
+- title: Spinnaker Continuous Delivery on Azure
+  event: Azure Community Conference
+  location: Virtual / Global
+  date: 2021-11-20
+  role: Speaker
+  description: Deep dive into multi-cloud deployment pipelines and advanced release strategies using Spinnaker on Azure.
+  tags: [azure, spinnaker, ci-cd]
+  slides_url: https://misskecupbung.wordpress.com/talks/spinnaker-azure-2021
+  video_url:
