@@ -94,356 +94,125 @@ ninja.data = [{
             window.location.href = "/blog/2025/plotly/";
           
         },
-      },{id: "post-a-post-with-image-galleries",
+      },{id: "post-aws-summit-singapore-2024-it-was-an-awsome-event",
         
-          title: "a post with image galleries",
+          title: 'AWS Summit Singapore 2024: It was An AWSome Event! <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "this is what included image galleries could look like",
+        description: "Hi all! I hope that you, wherever now, are doing well and happy as well. I would like to share about my experience at the AWS Summit Singapore two weeks ago, on May 7 2024 that I attended and spoke at. First, honestly, I didn&amp;#8217;t expect to have the opportunity to speak at the event, [&amp;#8230;]",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/photo-gallery/";
+            window.open("https://misskecupbung.wordpress.com/2024/05/22/aws-summit-singapore-2024-it-was-an-awsome-event/", "_blank");
           
         },
-      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+      },{id: "post-temuan-tangkapan-layar-berkas-kuliah",
         
-          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+          title: 'Temuan Tangkapan Layar Berkas Kuliah <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
+        description: "Tadi sewaktu bongkar berkas kuliah yang lumayan menumpuk di drive, saya iseng coba lihat satu-satu termasuk foto-foto lama. Perjalanan selama hampir empat tahun yang kalau dipikir dan dilihat sekarang, keliatan sangat amat berkesan. 🙂 Salah satunya yang terlampir. Menurut saya pribadi, mata kuliah pengembangan game termasuk yang cukup sulit. Mungkin karena dari awal mindsetnya itu [&amp;#8230;]",
         section: "Posts",
         handler: () => {
           
-            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
+            window.open("https://misskecupbung.wordpress.com/2024/05/19/temuan-tangkapan-layar-berkas-kuliah/", "_blank");
           
         },
-      },{id: "post-a-post-with-tabs",
+      },{id: "post-migrasi-database-di-mysql-on-premise-ke-cloud-sql-menggunakan-database-migration-service",
         
-          title: "a post with tabs",
-        
-        description: "this is what included tabs in a post could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/tabs/";
-          
-        },
-      },{id: "post-a-post-with-typograms",
-        
-          title: "a post with typograms",
-        
-        description: "this is what included typograms code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/typograms/";
-          
-        },
-      },{id: "post-a-post-that-can-be-cited",
-        
-          title: "a post that can be cited",
-        
-        description: "this is what a post that can be cited looks like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/post-citation/";
-          
-        },
-      },{id: "post-a-post-with-pseudo-code",
-        
-          title: "a post with pseudo code",
-        
-        description: "this is what included pseudo code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/pseudocode/";
-          
-        },
-      },{id: "post-a-post-with-code-diff",
-        
-          title: "a post with code diff",
-        
-        description: "this is how you can display code diffs",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/code-diff/";
-          
-        },
-      },{id: "post-a-post-with-advanced-image-components",
-        
-          title: "a post with advanced image components",
-        
-        description: "this is what advanced image components could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/advanced-images/";
-          
-        },
-      },{id: "post-a-post-with-vega-lite",
-        
-          title: "a post with vega lite",
-        
-        description: "this is what included vega lite code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/vega-lite/";
-          
-        },
-      },{id: "post-a-post-with-geojson",
-        
-          title: "a post with geojson",
-        
-        description: "this is what included geojson code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/geojson-map/";
-          
-        },
-      },{id: "post-a-post-with-echarts",
-        
-          title: "a post with echarts",
-        
-        description: "this is what included echarts code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/echarts/";
-          
-        },
-      },{id: "post-a-post-with-chart-js",
-        
-          title: "a post with chart.js",
-        
-        description: "this is what included chart.js code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/chartjs/";
-          
-        },
-      },{id: "post-a-post-with-tikzjax",
-        
-          title: "a post with TikZJax",
-        
-        description: "this is what included TikZ code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/tikzjax/";
-          
-        },
-      },{id: "post-a-post-with-bibliography",
-        
-          title: "a post with bibliography",
-        
-        description: "an example of a blog post with bibliography",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/post-bibliography/";
-          
-        },
-      },{id: "post-a-post-with-jupyter-notebook",
-        
-          title: "a post with jupyter notebook",
-        
-        description: "an example of a blog post with jupyter notebook",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/jupyter-notebook/";
-          
-        },
-      },{id: "post-a-post-with-custom-blockquotes",
-        
-          title: "a post with custom blockquotes",
-        
-        description: "an example of a blog post with custom blockquotes",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/custom-blockquotes/";
-          
-        },
-      },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
-        
-          title: "a post with table of contents on a sidebar",
-        
-        description: "an example of a blog post with table of contents on a sidebar",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/sidebar-table-of-contents/";
-          
-        },
-      },{id: "post-a-post-with-audios",
-        
-          title: "a post with audios",
-        
-        description: "this is what included audios could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/audios/";
-          
-        },
-      },{id: "post-a-post-with-videos",
-        
-          title: "a post with videos",
-        
-        description: "this is what included videos could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/videos/";
-          
-        },
-      },{id: "post-displaying-beautiful-tables-with-bootstrap-tables",
-        
-          title: "displaying beautiful tables with Bootstrap Tables",
-        
-        description: "an example of how to use Bootstrap Tables",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/tables/";
-          
-        },
-      },{id: "post-a-post-with-table-of-contents",
-        
-          title: "a post with table of contents",
-        
-        description: "an example of a blog post with table of contents",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/table-of-contents/";
-          
-        },
-      },{id: "post-a-post-with-giscus-comments",
-        
-          title: "a post with giscus comments",
-        
-        description: "an example of a blog post with giscus comments",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2022/giscus-comments/";
-          
-        },
-      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
-        
-          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+          title: 'Migrasi Database di MySQL On-Premise ke Cloud SQL menggunakan Database Migration Service <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
         description: "",
         section: "Posts",
         handler: () => {
           
-            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
+            window.open("https://medium.com/google-cloud-indonesia/migrasi-database-di-mysql-on-premise-menggunakan-database-migration-service-ke-cloud-sql-c5547f9baebd?source=rss-4dd39a6b908a------2", "_blank");
           
         },
-      },{id: "post-a-post-with-redirect",
+      },{id: "post-google-cloud-migrasi-database-di-mysql-on-premise-ke-cloud-sql-menggunakan-database-migration-service",
         
-          title: "a post with redirect",
+          title: 'Google Cloud: Migrasi Database di MySQL On-Premise ke Cloud SQL menggunakan Database Migration... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "you can also redirect to assets like pdf",
+        description: "Halo semua! Selamat siang! Apa kabar? Jumpa lagi di Jurnal saya ya! Sudah lama tidak update dan disini saya ingin memulai tahun 2024 dengan topik&amp;#160;migrasi database MySQL di on-premise ke Cloud SQL menggunakan Database Migration Service. Yup! Mengapa harus menggunakan Database Migration Service? Sebenarnya bisa saja kita menggunakan tool semacam&amp;#160;mysqldump&amp;#160;untuk&amp;#160;dump&amp;#160;database di on-premise dan&amp;#160;restore&amp;#160;di Cloud SQL. [&amp;#8230;]",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/assets/pdf/example_pdf.pdf";
+            window.open("https://misskecupbung.wordpress.com/2024/01/17/google-cloud-migrasi-database-di-mysql-on-premise-ke-cloud-sql-menggunakan-database-migration-service/", "_blank");
           
         },
-      },{id: "post-a-post-with-diagrams",
+      },{id: "post-aws-deploy-a-simple-application-with-custom-domain-using-aws-app-runner",
         
-          title: "a post with diagrams",
+          title: 'AWS: Deploy a Simple Application with Custom Domain using AWS App Runner <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "an example of a blog post with diagrams",
+        description: "Hi all! Good night and I hope that you are doing well. In this journal, I would like to share with you about AWS App Runner. Specifically, I will explain how to deploy a simple application on there and set it so it will use a custom domain. For the domain, I will use Amazon [&amp;#8230;]",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2021/diagrams/";
+            window.open("https://misskecupbung.wordpress.com/2023/06/16/aws-deploy-a-simple-application-with-custom-domain-using-aws-app-runner/", "_blank");
           
         },
-      },{id: "post-a-distill-style-blog-post",
+      },{id: "post-aws-cara-mendaftarkan-domain-baru-melalui-layanan-amazon-route-53",
         
-          title: "a distill-style blog post",
+          title: 'AWS: Cara Mendaftarkan Domain Baru Melalui Layanan Amazon Route 53 <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "an example of a distill-style blog post and main elements",
+        description: "Halo semua! Apa kabar? semoga baik-baik saja ya semua ^^ sudah lama rasanya saya tidak menulis dan akan dicoba rutinkan kembali. Semoga terlaksana ya dan tidak hanya wacana ya 😀 Pada tulisan ini saya ingin menjelaskan bagaimana mendaftarkan domain baru melalui layanan di AWS, yaitu Amazon Route 53. Apa keuntungannya? Sifatnya yang centralized, dimana hanya [&amp;#8230;]",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2021/distill/";
+            window.open("https://misskecupbung.wordpress.com/2023/06/02/aws-cara-mendaftarkan-domain-baru-melalui-layanan-amazon-route-53/", "_blank");
           
         },
-      },{id: "post-a-post-with-twitter",
+      },{id: "post-aws-cloud-stop-an-ec2-instance-using-aws-lambda-when-the-budget-amount-is-reached",
         
-          title: "a post with twitter",
+          title: 'AWS Cloud: Stop an EC2 Instance using AWS Lambda when the Budget Amount... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "an example of a blog post with twitter",
+        description: "Hi all! Good night and happy holiday! Here I would like to share with all of you about something an interesting case study that maybe you&amp;#8217;ve done or come across soon. Imagine the Developer Team in your company is still doing Proof-of-Concept related to a specific project for the user, and the user is strict [&amp;#8230;]",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2020/twitter/";
+            window.open("https://misskecupbung.wordpress.com/2023/01/24/aws-cloud-stop-an-ec2-instance-using-aws-lambda-when-the-budget-amount-is-reached/", "_blank");
           
         },
-      },{id: "post-a-post-with-disqus-comments",
+      },{id: "post-my-journey-roadtogde-mentorship-program",
         
-          title: "a post with disqus comments",
+          title: 'My Journey: #RoadToGDE Mentorship Program <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "an example of a blog post with disqus comments",
+        description: "Hi all! How are you? I hope that you all good and healthy. By end of this year, I just want to share something great experience I&amp;#8217;ve done from September until December 2022. Yup #RoadToGDE Mentorship Program. That is an incredible journey, I thought. As long as 7 weeks, we as a mentee got opportunities [&amp;#8230;]",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/disqus-comments/";
+            window.open("https://misskecupbung.wordpress.com/2022/12/31/my-journey-roadtogde-mentorship-program/", "_blank");
           
         },
-      },{id: "post-a-post-with-math",
+      },{id: "post-google-cloud-backup-and-restore-our-gke-workloads-using-backup-for-gke",
         
-          title: "a post with math",
+          title: 'Google Cloud: Backup and Restore Our GKE Workloads using Backup for GKE <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "an example of a blog post with some math",
+        description: "Hi all! I hope that you are doing well, safe and healthy! In this journal, I would like to share and explain a case study related to one of the great features of Google Kubernetes Engine (GKE). Yup, it is a Backup for GKE. As the name suggests, this feature is intended to back up [&amp;#8230;]",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/math/";
+            window.open("https://misskecupbung.wordpress.com/2022/10/07/google-cloud-backup-and-restore-strategy-on-google-kubernetes-engine-gke/", "_blank");
           
         },
-      },{id: "post-a-post-with-code",
+      },{id: "post-google-cloud-backup-and-restore-our-gke-workloads-using-velero",
         
-          title: "a post with code",
+          title: 'Google Cloud: Backup and Restore Our GKE Workloads using Velero <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "an example of a blog post with some code",
+        description: "Hi all! I hope that you are doing well. In this journal, I will explain the backup and restore strategy for Kubernetes using Velero, specifically in Google Kubernetes Engine (GKE). As you may know, Velero is one of the great open-source tools which can be used to back up and restore (including migrate and replicate) [&amp;#8230;]",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/code/";
+            window.open("https://misskecupbung.wordpress.com/2022/10/07/google-cloud-backup-and-restore-our-gke-workloads-using-velero/", "_blank");
           
         },
-      },{id: "post-a-post-with-images",
+      },{id: "post-google-cloud-gke-upgrade-using-blue-green-strategy",
         
-          title: "a post with images",
+          title: 'Google Cloud: GKE Upgrade using Blue-Green Strategy <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "this is what included images could look like",
+        description: "Hi all! I hope that your day is good enough. In this journal, I would like to explain about Google Kubernetes (GKE) upgrade, specifically using Blue-Green Strategy. By default, GKE offers an automatic upgrade feature to our existing GKE cluster. We just have to make sure auto-upgrade is enabled, with a bit configuration, and the [&amp;#8230;]",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/images/";
-          
-        },
-      },{id: "post-a-post-with-formatting-and-links",
-        
-          title: "a post with formatting and links",
-        
-        description: "march &amp; april, looking forward to summer",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/formatting-and-links/";
+            window.open("https://misskecupbung.wordpress.com/2022/10/06/google-cloud-gke-upgrade-using-blue-green-strategy/", "_blank");
           
         },
       },{id: "books-the-godfather",
@@ -477,49 +246,19 @@ ninja.data = [{
           description: "a project that redirects to another website",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%61%6E%61%6E%64%61.%64%77%69%72%61%68%6D%61%77%61%74%69%33%31%33@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
         id: 'social-inspire',
         title: 'Inspire HEP',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://inspirehep.net/authors/", "_blank");
         },
       },{
         id: 'social-rss',
@@ -533,14 +272,49 @@ ninja.data = [{
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
+          window.open("https://scholar.google.com/citations?user=", "_blank");
+        },
+      },{
+        id: 'social-facebook',
+        title: 'Facebook',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://facebook.com/misskecupbung", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/misskecupbung", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/anandadwir", "_blank");
+        },
+      },{
+        id: 'social-blogger',
+        title: 'Blogger',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://misskecupbung.wordpress.com", "_blank");
+        },
+      },{
+        id: 'social-x',
+        title: 'X',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://twitter.com/misskecupbung", "_blank");
         },
       },{
         id: 'social-custom_social',
         title: 'Custom_social',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
+          window.open("https://misskecupbung.wordpress.com/", "_blank");
         },
       },{
       id: 'light-theme',
