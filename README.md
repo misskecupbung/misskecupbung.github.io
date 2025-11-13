@@ -1,33 +1,6 @@
-# al-folio
+# Personal Site
 
-<div align="center">
-
-[![Preview](readme_preview/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)
-
-**A simple, clean, and responsive [Jekyll](https://jekyllrb.com/) theme for academics.**
-
----
-
-[![deploy](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml/badge.svg)](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml)
-[![Maintainers](https://img.shields.io/badge/maintainers-4-success.svg)](#maintainers)
-[![GitHub contributors](https://img.shields.io/github/contributors/alshedivat/al-folio.svg)](https://github.com/alshedivat/al-folio/graphs/contributors/)
-[![Docker Image Version](https://img.shields.io/docker/v/amirpourmand/al-folio?sort=semver&label=docker%20image&color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
-[![Docker Image Size](https://img.shields.io/docker/image-size/amirpourmand/al-folio?sort=date&label=docker%20image%20size&color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/amirpourmand/al-folio?color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
-
-[![GitHub release](https://img.shields.io/github/v/release/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/alshedivat/al-folio?color=blue)](https://github.com/alshedivat/al-folio/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/fork)
-
-</div>
-
-## User community
-
-The vibrant community of **al-folio** users is growing!
-Academics around the world use this theme for their homepages, blogs, lab pages, as well as webpages for courses, workshops, conferences, meetups, and more.
-Check out the community webpages below.
-Feel free to add your own page(s) by sending a PR.
+This repository now hosts a simplified personal academic website based on the al-folio Jekyll theme — trimmed of demo posts, preview images, and upstream documentation for a lean footprint.
 
 <table>
 <tr>
@@ -216,19 +189,13 @@ Workshop on Structured Probabilistic Inference & Generative Modeling (ICML: <a h
 </tr>
 </table>
 
-## Lighthouse PageSpeed Insights
+## About
 
-### Desktop
-
-[![Google Lighthouse PageSpeed Insights](lighthouse_results/desktop/pagespeed.svg)](https://htmlpreview.github.io/?https://github.com/alshedivat/al-folio/blob/main/lighthouse_results/desktop/alshedivat_github_io_al_folio_.html)
-
-Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.web.dev/report?url=https%3A%2F%2Falshedivat.github.io%2Fal-folio%2F&form_factor=desktop)
-
-### Mobile
-
-[![Google Lighthouse PageSpeed Insights](lighthouse_results/mobile/pagespeed.svg)](https://htmlpreview.github.io/?https://github.com/alshedivat/al-folio/blob/main/lighthouse_results/mobile/alshedivat_github_io_al_folio_.html)
-
-Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.web.dev/report?url=https%3A%2F%2Falshedivat.github.io%2Fal-folio%2F&form_factor=mobile)
+Content structure:
+- `_pages/` for standalone pages (about, publications, etc.).
+- `_projects/`, `_news/`, `_books/` for collections enabled in `_config.yml`.
+- `_bibliography/` for publication data (managed via jekyll-scholar).
+- `_data/` for structured YAML used across templates (socials, repositories, CV).
 
 ## Table Of Contents
 
@@ -268,17 +235,18 @@ Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.
   - [License](#license)
   <!--te-->
 
-## Getting started
+## Local Development
 
-Want to learn more about Jekyll? Check out [this tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/). Why Jekyll? Read [Andrej Karpathy's blog post](https://karpathy.github.io/2014/07/01/switching-to-jekyll/)! Why write a blog? Read [Rachel Thomas blog post](https://medium.com/@racheltho/why-you-yes-you-should-blog-7d2544ac1045).
+Install Ruby + Bundler, then:
 
-## Installing and Deploying
+```bash
+bundle install
+bundle exec jekyll serve --livereload
+```
 
-For installation and deployment details please refer to [INSTALL.md](INSTALL.md).
+## Deployment
 
-## Customizing
-
-For customization details please refer to [CUSTOMIZE.md](CUSTOMIZE.md).
+Push changes to `main` — GitHub Pages / Actions publish the site. Docker/CI helpers were removed for simplicity.
 
 ## Features
 
@@ -439,15 +407,13 @@ Currently, we run some checks to ensure that the code quality and generated site
 
 We decided to keep `Axe` runs manual because fixing the issues are not straightforward and might be hard for people without web development knowledge.
 
-## FAQ
+## Customization Notes
 
-For frequently asked questions, please refer to [FAQ.md](FAQ.md).
+Theme options (math, dark mode, zoom, etc.) are toggled in `_config.yml`. Sass variables live under `_sass/`. Add or remove plugins via `Gemfile` and `_config.yml`.
 
-## Contributing
+## Attribution
 
-Contributions to al-folio are very welcome! Before you get started, please take a look at [the guidelines](CONTRIBUTING.md).
-
-If you would like to improve documentation or fix a minor inconsistency or bug, please feel free to send a PR directly to `main`. For more complex issues/bugs or feature requests, please open an issue using the appropriate template.
+Originally derived from the upstream al-folio theme. Unused showcase assets and example posts were intentionally removed.
 
 ### Maintainers
 
@@ -490,6 +456,4 @@ Our most active contributors are welcome to join the maintainers team. If you ar
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://github.com/alshedivat/al-folio/blob/main/LICENSE).
-
-Originally, **al-folio** was based on the [\*folio theme](https://github.com/bogoli/-folio) (published by [Lia Bogoev](https://liabogoev.com) and under the MIT license). Since then, it got a full re-write of the styles and many additional cool features.
+MIT — see `LICENSE`.
