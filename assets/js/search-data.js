@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-talks",
           title: "talks",
-          description: "Conference talks and presentations from Speaker Deck",
+          description: "Conference talks and presentations",
           section: "Navigation",
           handler: () => {
             window.location.href = "/talks/";
@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "nav-certifications",
           title: "certifications",
-          description: "Professional certifications and badges from Credly",
+          description: "Professional certifications and credentials",
           section: "Navigation",
           handler: () => {
             window.location.href = "/certifications/";
