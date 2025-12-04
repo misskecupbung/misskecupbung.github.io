@@ -1,5 +1,4 @@
 require 'httparty'
-require 'nokogiri'
 require 'json'
 
 module FetchCredlyBadges
@@ -24,15 +23,16 @@ module FetchCredlyBadges
     end
 
     def fetch_badges(username)
+      # Credly public API endpoint
       url = "https://www.credly.com/users/#{username}/badges.json"
       
       headers = {
         'Accept' => 'application/json',
-        'User-Agent' => 'Jekyll-Credly-Plugin'
+        'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
       }
 
       begin
-        response = HTTParty.get(url, headers: headers, timeout: 15)
+        response = HTTParty.get(url, headers: headers, timeout: 30, follow_redirects: true)
         
         if response.success?
           data = JSON.parse(response.body)
@@ -40,17 +40,18 @@ module FetchCredlyBadges
           
           badges.map do |badge|
             {
-              'name' => badge['badge_template']['name'],
-              'description' => badge['badge_template']['description'],
-              'image_url' => badge['badge_template']['image_url'],
-              'badge_url' => "https://www.credly.com#{badge['path']}",
-              'issuer' => badge['badge_template']['issuer']['name'],
+              'id' => badge['id'],
+              'name' => badge.dig('badge_template', 'name') || 'Unknown',
+              'description' => badge.dig('badge_template', 'description') || '',
+              'image_url' => badge.dig('badge_template', 'image_url') || '',
+              'badge_url' => "https://www.credly.com/badges/#{badge['id']}/public_url",
+              'issuer' => badge.dig('badge_template', 'issuer', 'name') || 'Unknown',
               'issued_at' => badge['issued_at'],
               'expires_at' => badge['expires_at']
             }
           end
         else
-          puts "Error fetching Credly badges: #{response.code}"
+          puts "Error fetching Credly badges: HTTP #{response.code}"
           []
         end
       rescue StandardError => e
