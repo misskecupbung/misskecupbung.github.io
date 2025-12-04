@@ -18,101 +18,83 @@ module FetchSpeakerDeck
         puts "Loaded #{presentations.size} Speaker Deck presentations"
       else
         site.data['speakerdeck_presentations'] = []
-        puts "No Speaker Deck presentations found or error fetching"
+        puts "No Speaker Deck presentations found"
       end
     end
 
     def fetch_presentations(username)
       presentations = []
-      page = 1
+      url = "https://speakerdeck.com/#{username}"
       
-      loop do
-        url = "https://speakerdeck.com/#{username}?page=#{page}"
-        
-        headers = {
-          'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
-          'Accept' => 'text/html,application/xhtml+xml'
-        }
+      headers = {
+        'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+      }
 
-        begin
-          response = HTTParty.get(url, headers: headers, timeout: 30, follow_redirects: true)
+      begin
+        response = HTTParty.get(url, headers: headers, timeout: 30, follow_redirects: true)
+        
+        if response.success?
+          doc = Nokogiri::HTML(response.body)
+          seen_urls = Set.new
           
-          if response.success?
-            doc = Nokogiri::HTML(response.body)
+          # Find all deck links - they follow pattern /username/deck-slug
+          doc.css('a[href^="/' + username + '/"]').each do |link|
+            href = link['href']
             
-            # Try multiple selectors for deck cards
-            deck_cards = doc.css('.deck-preview, .talk, article.deck, [data-testid="deck-card"]')
+            # Skip non-deck links
+            next if href.nil?
+            next if href.include?('/followers')
+            next if href.include?('/following')
+            next if href.include?('/stars')
+            next if href == "/#{username}"
+            next if href == "/#{username}/"
             
-            # If no cards found, try finding links to presentations
-            if deck_cards.empty?
-              doc.css('a[href*="/misskecupbung/"]').each do |link|
-                href = link['href']
-                next if href.nil? || href.include?('/followers') || href.include?('/following') || href.include?('/stars')
-                next unless href.start_with?("/#{username}/")
-                
-                title = link.text.strip
-                title = 'Untitled' if title.empty?
-                
-                # Skip navigation links
-                next if ['Following', 'Followers', 'Stars', username].include?(title)
-                
-                full_url = "https://speakerdeck.com#{href}"
-                embed_id = href.split('/').last
-                
-                # Avoid duplicates
-                next if presentations.any? { |p| p['url'] == full_url }
-                
-                presentations << {
-                  'title' => title,
-                  'url' => full_url,
-                  'date' => nil,
-                  'image_url' => nil,
-                  'embed_id' => embed_id
-                }
+            # Build full URL
+            full_url = "https://speakerdeck.com#{href}"
+            
+            # Skip duplicates
+            next if seen_urls.include?(full_url)
+            seen_urls.add(full_url)
+            
+            # Get title from the link or nearby elements
+            title = nil
+            
+            # Try to find title in parent card structure
+            parent = link.parent
+            5.times do
+              break if parent.nil?
+              title_el = parent.at_css('.deck-preview-title, h3, h4, .title, [class*="title"]')
+              if title_el
+                title = title_el.text.strip
+                break
               end
-              break
+              parent = parent.parent
             end
             
-            deck_cards.each do |card|
-              link = card.at_css('a[href*="/#{username}/"]') || card.at_css('a.deck-preview-link') || card.at_css('a')
-              next unless link && link['href']
-              
-              href = link['href']
-              next if href.include?('/followers') || href.include?('/following')
-              
-              title_el = card.at_css('.deck-preview-title, h3, h4, .title')
-              date_el = card.at_css('time, .date, .deck-preview-meta time')
-              img_el = card.at_css('img')
-              
-              title = title_el ? title_el.text.strip : link.text.strip
-              title = 'Untitled' if title.empty?
-              
-              full_url = href.start_with?('http') ? href : "https://speakerdeck.com#{href}"
-              
-              presentations << {
-                'title' => title,
-                'url' => full_url,
-                'date' => date_el ? (date_el['datetime'] || date_el.text.strip) : nil,
-                'image_url' => img_el ? img_el['src'] : nil,
-                'embed_id' => href.split('/').last
-              }
-            end
+            # Fallback to link text if no title found
+            title = link.text.strip if title.nil? || title.empty?
             
-            # Check if there's a next page
-            next_link = doc.at_css('a[rel="next"], .pagination a.next')
-            break unless next_link
+            # Skip if still no meaningful title
+            next if title.nil? || title.empty? || title == username
             
-            page += 1
-          else
-            puts "Error fetching Speaker Deck page #{page}: HTTP #{response.code}"
-            break
+            # Get embed ID from URL
+            embed_id = href.split('/').last
+            
+            presentations << {
+              'title' => title,
+              'url' => full_url,
+              'embed_id' => embed_id
+            }
           end
-        rescue StandardError => e
-          puts "Error fetching Speaker Deck: #{e.message}"
-          break
+        else
+          puts "Error fetching Speaker Deck: HTTP #{response.code}"
         end
+      rescue StandardError => e
+        puts "Error fetching Speaker Deck: #{e.message}"
       end
       
+      # Remove duplicates by URL and return
       presentations.uniq { |p| p['url'] }
     end
   end

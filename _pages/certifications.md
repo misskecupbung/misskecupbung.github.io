@@ -2,14 +2,12 @@
 layout: page
 permalink: /certifications/
 title: certifications
-description: Professional certifications and credentials
+description: Cloud, DevOps, and networking certifications from AWS, Google, Azure, HashiCorp, Linux Foundation, and MikroTik
 nav: true
 nav_order: 6
 ---
 
 <div class="certifications">
-
-## Professional Certifications
 
 <p class="mb-4">
   View all my verified credentials on <a href="https://www.credly.com/users/anandadwir/badges" target="_blank">Credly</a>.
