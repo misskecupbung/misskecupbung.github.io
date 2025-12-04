@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "Senior Cloud &amp; DevOps Engineer with 6+ years of experience in AWS, Azure, GCP. AWS Container Hero and Google Developer Expert.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -213,6 +213,13 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
             },},{
+        id: 'social-blogger',
+        title: 'Blogger',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://misskecupbung.wordpress.com", "_blank");
+        },
+      },{
         id: 'social-cv',
         title: 'CV',
         section: 'Socials',
@@ -225,6 +232,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("mailto:%61%6E%61%6E%64%61.%64%77%69%72%61%68%6D%61%77%61%74%69%33%31%33@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-facebook',
+        title: 'Facebook',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://facebook.com/misskecupbung", "_blank");
         },
       },{
         id: 'social-github',
@@ -241,20 +255,6 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/anandadwir", "_blank");
         },
       },{
-        id: 'social-x',
-        title: 'X',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://twitter.com/misskecupbung", "_blank");
-        },
-      },{
-        id: 'social-facebook',
-        title: 'Facebook',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://facebook.com/misskecupbung", "_blank");
-        },
-      },{
         id: 'social-rss',
         title: 'RSS Feed',
         section: 'Socials',
@@ -262,11 +262,18 @@ ninja.data = [{
           window.open("/feed.xml", "_blank");
         },
       },{
+        id: 'social-x',
+        title: 'X',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://twitter.com/misskecupbung", "_blank");
+        },
+      },{
         id: 'social-custom_social',
         title: 'Custom_social',
         section: 'Socials',
         handler: () => {
-          window.open("", "_blank");
+          window.open("https://speakerdeck.com/misskecupbung", "_blank");
         },
       },{
       id: 'light-theme',
