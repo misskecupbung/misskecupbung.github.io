@@ -2,96 +2,149 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Ananda Dwi Rahmawati
+    - name: Location
+      value: Singapore
     - name: Languages
-      value: English, German
+      value: English, Indonesian
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Master of Computer Science
+      institution: University of Texas at Austin (Distance Learning)
+      year: 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - GPA 3.77/4.00
+    - title: S.Tr.Kom, Software Engineering Technology
+      institution: Universitas Gadjah Mada, Yogyakarta, Indonesia
+      year: 2019 - 2023
       description:
-        - Description 1.
-        - Description 2.
+        - GPA 3.84/4.00
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Cloud & DevOps Engineer (Cloud File Transfer Product)
+      institution: ACP Group (Outsourced to GovTech Singapore)
+      year: Oct 2024 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Migrated legacy to modern AWS infrastructure using Terraform and Pulumi; increased IaC coverage from 54% to 85%
+        - Migrated IAM secrets to OIDC in GitLab CI/CD, eliminating long-lived credentials
+        - Deployed observability stack (CloudWatch, X-Ray, ELK, CloudWatch Synthetics) for proactive detection and automated recovery
+        - Built GitLab CI/CD pipelines with drift detection, security validation, and manual approval gates
+        - Implemented ECS and RDS Auto Scaling; performance tested 100+ ECS services
+        - Integrated SonarQube and Snyk into GitLab; remediated 100+ IAM policy vulnerabilities via AWS Config
+        - Automated ECR image scanning and patching; remediated 200+ vulnerabilities pre-production
+        - Optimized CloudFront for 35% lower latency; enhanced security with AWS PrivateLink, Transit Gateway, and WAF
+        - Developed compliance scoring and reporting automation for 200+ projects
+        - Reduced cloud spend by identifying and eliminating idle resources using Trusted Advisor and Lambda cleanup scripts
+
+    - title: Cloud & DevOps Engineer
+      institution: Activate Interactive Pte Ltd, Singapore
+      year: Oct 2023 - Sept 2024
       description:
-        - Description 1.
-        - Description 2.
+        - Managed secure cloud platforms on AWS and Alibaba Cloud; enabled 100TB+ daily data exchange across 100+ agencies via SFTP, HTTPS, and APIs
+        - Led on-prem to AWS migration using Terraform and Pulumi; increased IaC coverage from 54% to 90%; achieved $500K+ annual cost savings
+        - Built CI/CD pipelines (GitLab, CodePipeline) for 100+ microservices with automated security scans (SonarQube, Snyk, DAST)
+        - Deployed and managed VPC, ECS, RDS, ALB, Lambda, KMS, S3, Glue across multiple zones and cloud providers
+        - Deployed Azure solutions (Virtual Networks, Firewall, AD integration) with cost optimization via Azure Cost Management
+        - Automated RHEL and Windows server configuration using Ansible, DSC, and PowerShell; ensured CIS compliance
+        - Deployed monitoring stack (CloudWatch, X-Ray, ELK, Prometheus, Grafana) supporting zero-downtime deployments
+        - Improved team velocity by 35% as Scrum Master; optimized agile delivery through sprint planning and retrospectives
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Cloud Infrastructure Engineer
+      institution: PT Boer Technology, Bogor, Indonesia
+      year: July 2019 - Sept 2023
       description:
+        - Deployed multi-region OpenStack and Ceph-based private cloud platforms for 500+ enterprise clients with 99.9% availability
+        - Developed infrastructure automation using Python, Bash, and Go for reproducible deployments and cluster expansion
+        - Built monitoring and alerting pipelines (Prometheus, Grafana, Alertmanager); achieved 99.5-99.9% uptime across 300+ instances
+        - Integrated VMware vSphere, vSAN, and NSX with OpenShift and Pure Storage
+        - Built CI/CD pipelines using GitLab and Azure DevOps with security scans (OWASP ZAP, Burp Suite)
+        - Managed MySQL and PostgreSQL clusters; performed failover, recovery, and query optimization
+        - Containerized legacy applications (PHP, Django) into microservices with Docker and Kubernetes; improved deployment frequency by 10×
+        - Led migration across AWS, GCP, and Alibaba Cloud; achieved 40% cost savings and 60% performance improvement
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Freelance Trainer
+      institution: Part-Time / Freelance, Indonesia
+      year: 2021 - Present
+      description:
+        - Delivered technical training to 1,000+ professionals across banking, government, and private sectors; 95%+ positive feedback
+        - Developed hands-on curricula for Mastercard Academy 2.0 and Google Bangkit Academy (GCP, AWS, Kubernetes, CI/CD, ELK)
+        - Led certification programs (CompTIA Linux+, Security+) and cloud workshops
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Cloud Platforms
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - AWS (ECS, EKS, Lambda, EC2, S3, RDS, Aurora, DynamoDB, VPC, Transit Gateway, PrivateLink, WAF, CloudFront)
+        - Azure (Virtual Networks, Firewall, AD, Cost Management, DevOps, Pipelines)
+        - GCP (GKE, Cloud SQL, Cloud Functions, IAM)
+        - Alibaba Cloud (Function Compute, SLS, OSS)
+    - title: Infrastructure as Code
       items:
-        - Description 1.
-        - Description 2.
+        - Terraform, Pulumi, CloudFormation, AWS CDK, Ansible, Helm
+    - title: Containers & Orchestration
+      items:
+        - Kubernetes (EKS, GKE, K3s, OpenShift), Docker, Podman, Containerd, CRI-O
+    - title: CI/CD & Automation
+      items:
+        - GitLab CI/CD, GitHub Actions, Jenkins, ArgoCD, AWS CodePipeline, Azure DevOps
+    - title: Observability
+      items:
+        - CloudWatch, X-Ray, Prometheus, Grafana, ELK Stack, Datadog, OpenTelemetry, Grafana Loki
+    - title: Security & DevSecOps
+      items:
+        - IAM, KMS, Secrets Manager, Security Hub, GuardDuty, SonarQube, Snyk, SAST/DAST, container image scanning
+    - title: Networking
+      items:
+        - VPC, Subnetting, TCP/IP, VLANs, Firewalls, VPN, SD-WAN, mTLS, Service Mesh (Istio, Linkerd, Envoy)
+    - title: Programming & Scripting
+      items:
+        - Python, Bash, Go, Java
 
-- title: Other Interests
+- title: Certifications
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - HashiCorp Certified Terraform Associate (003)
+    - Linux Foundation Certified System Administrator (LFCS)
+    - AWS Certified Solutions Architect - Associate
+    - AWS Certified Cloud Practitioner
+    - Google Professional Cloud Architect
+    - Google Associate Cloud Engineer
+    - Microsoft Azure Administrator Associate (AZ-104)
+    - Microsoft Azure Fundamentals (AZ-900)
+    - CompTIA Security+ ce
+    - Certified OpenStack Administrator (COA)
+    - Oracle Cloud Infrastructure Foundations Associate
+    - Alibaba Cloud ACA (Security, Cloud Computing)
+    - MikroTik Certified (MTCNA, MTCRE, MTCWE, MTCSE, MTCTCE, MTCUME, MTCINE)
+
+- title: Awards & Recognition
+  type: time_table
+  contents:
+    - year: 2023 - Present
+      items:
+        - AWS Container Hero
+        - Google Developer Expert - Cloud Modern Architecture
+    - year: 2023 - 2024
+      items:
+        - CNCF Ambassador
+
+- title: Speaking & Community
+  type: list
+  contents:
+    - "Google Cloud Summit Jakarta 2025: Advanced Scheduling for AI/ML - Orchestrating Ray Applications with KubeRay and Kueue"
+    - "AWS Summit Singapore 2024: Multi-Cluster Security with Network Firewall - Consistent Protection for Distributed EKS"
+    - "Azure Community Conference 2021: Continuous Delivery using Spinnaker on Azure"
+    - More talks at https://misskecupbung.wordpress.com/talks
+
+- title: Organizations
+  type: list
+  contents:
+    - Kubernetes and Cloud Native Indonesia (2023 - Present)
+    - AWS User Group Indonesia (2020 - Present)
+    - Google Developers (2019 - Present)
+    - Infrastructure Team - BlankOn Linux Indonesia (2017 - 2020)
