@@ -9,8 +9,6 @@ nav_order: 3
 
 <div class="talks">
 
-## Speaker Deck Presentations
-
 {% if site.data.speakerdeck_presentations and site.data.speakerdeck_presentations.size > 0 %}
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
