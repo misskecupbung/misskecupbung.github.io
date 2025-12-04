@@ -222,11 +222,11 @@ ninja.data = [{
           window.open("https://twitter.com/misskecupbung", "_blank");
         },
       },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
+        id: 'social-speakerdeck_username',
+        title: 'Speakerdeck_username',
         section: 'Socials',
         handler: () => {
-          window.open("https://speakerdeck.com/misskecupbung", "_blank");
+          window.open("", "_blank");
         },
       },{
       id: 'light-theme',
