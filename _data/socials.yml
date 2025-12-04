@@ -52,7 +52,4 @@ rss_icon: true # comment this line to hide the RSS icon
 x_username: misskecupbung # your X handle
 # youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 # zotero_username: # your zotero username
-custom_social:
-  logo: https://cdn.speakerdeck.com/assets/favicons/favicon-192x192-10fff1ff1e46e3c4e94e0a0e4ba48d8b5a0f2fd91a60953cc6e8f9b21a0d41ae.png
-  title: Speaker Deck
-  url: https://speakerdeck.com/misskecupbung
+speakerdeck_username: misskecupbung

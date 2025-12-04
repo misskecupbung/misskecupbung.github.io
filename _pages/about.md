@@ -2,14 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: Cloud & DevOps Engineer | AWS Community Builder
+subtitle: Cloud & DevOps Engineer | AWS Container Hero | Google Developer Expert Cloud - Modern Architecture
 
 profile:
   align: right
   image: ananda.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Jakarta, Indonesia</p>
+    <p>Singapore</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,7 +27,7 @@ latest_posts:
 
 Hi, I'm Ananda Dwi Rahmawati — a Cloud and DevOps Engineer passionate about building scalable, secure, and automated infrastructure.
 
-With experience across AWS, Google Cloud, and Azure, I specialize in Kubernetes orchestration, infrastructure as code, and CI/CD pipelines. I'm an AWS Community Builder and active speaker at cloud conferences including AWS Summit, Google Cloud Summit, and Azure Community Conference.
+With experience across AWS, Google Cloud, and Azure, I specialize in Kubernetes orchestration, infrastructure as code, and CI/CD pipelines. I'm an AWS Container Hero and Google Developer Expert for Cloud - Modern Architecture. I'm also an active speaker at cloud conferences including AWS Summit, Google Cloud Summit, and Azure Community Conference.
 
 I hold multiple cloud certifications including AWS Solutions Architect, Google Professional Cloud Architect, and HashiCorp Terraform Associate. I'm also deeply experienced in networking with various MikroTik certifications.
 
