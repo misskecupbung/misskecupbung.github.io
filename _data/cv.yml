@@ -3,15 +3,17 @@
   contents:
     - name: Full Name
       value: Ananda Dwi Rahmawati
+    - name: Email
+      value: ananda.dwirahmawati313@gmail.com
     - name: Location
-      value: Singapore
+      value: Singapore, SG
     - name: Languages
       value: English, Indonesian
 
 - title: Education
   type: time_table
   contents:
-    - title: Master of Computer Science
+    - title: M.S. Computer Science
       institution: University of Texas at Austin (Distance Learning)
       year: 2025
       description:
@@ -29,49 +31,47 @@
       institution: ACP Group (Outsourced to GovTech Singapore)
       year: Oct 2024 - Present
       description:
-        - Migrated legacy to modern AWS infrastructure using Terraform and Pulumi; increased IaC coverage from 54% to 85%
-        - Migrated IAM secrets to OIDC in GitLab CI/CD, eliminating long-lived credentials
-        - Deployed observability stack (CloudWatch, X-Ray, ELK, CloudWatch Synthetics) for proactive detection and automated recovery
-        - Built GitLab CI/CD pipelines with drift detection, security validation, and manual approval gates
-        - Implemented ECS and RDS Auto Scaling; performance tested 100+ ECS services
-        - Integrated SonarQube and Snyk into GitLab; remediated 100+ IAM policy vulnerabilities via AWS Config
-        - Automated ECR image scanning and patching; remediated 200+ vulnerabilities pre-production
-        - Optimized CloudFront for 35% lower latency; enhanced security with AWS PrivateLink, Transit Gateway, and WAF
-        - Developed compliance scoring and reporting automation for 200+ projects
-        - Reduced cloud spend by identifying and eliminating idle resources using Trusted Advisor and Lambda cleanup scripts
+        - Migrated legacy to modern AWS infra using Terraform/Pulumi; increased IaC coverage from 54% to 85%
+        - Achieved 100% OIDC adoption by migrating IAM secrets to OIDC in GitLab CI/CD
+        - Built observability stack (CloudWatch, X-Ray, ELK, Synthetics) with automated recovery
+        - Implemented ECS/RDS Auto Scaling; performance tested 100+ ECS services
+        - Integrated SonarQube/Snyk into GitLab; remediated 100+ IAM policy issues via AWS Config
+        - Automated ECR image scanning; fixed 200+ vulnerabilities pre-production
+        - Optimized CloudFront for 35% lower latency; implemented PrivateLink, Transit Gateway, WAF
+        - Reduced cloud spend via Trusted Advisor, Config Rules, and Lambda cleanup scripts
 
     - title: Cloud & DevOps Engineer
       institution: Activate Interactive Pte Ltd, Singapore
       year: Oct 2023 - Sept 2024
       description:
-        - Managed secure cloud platforms on AWS and Alibaba Cloud; enabled 100TB+ daily data exchange across 100+ agencies via SFTP, HTTPS, and APIs
-        - Led on-prem to AWS migration using Terraform and Pulumi; increased IaC coverage from 54% to 90%; achieved $500K+ annual cost savings
-        - Built CI/CD pipelines (GitLab, CodePipeline) for 100+ microservices with automated security scans (SonarQube, Snyk, DAST)
-        - Deployed and managed VPC, ECS, RDS, ALB, Lambda, KMS, S3, Glue across multiple zones and cloud providers
-        - Deployed Azure solutions (Virtual Networks, Firewall, AD integration) with cost optimization via Azure Cost Management
-        - Automated RHEL and Windows server configuration using Ansible, DSC, and PowerShell; ensured CIS compliance
-        - Deployed monitoring stack (CloudWatch, X-Ray, ELK, Prometheus, Grafana) supporting zero-downtime deployments
-        - Improved team velocity by 35% as Scrum Master; optimized agile delivery through sprint planning and retrospectives
+        - Managed AWS/Alibaba Cloud platforms handling 100TB+ daily data exchange across 100+ agencies
+        - Led on-prem to AWS migration; increased IaC coverage to 90%; delivered $500K+ annual savings
+        - Built CI/CD pipelines (GitLab, CodePipeline) for 100+ microservices with SAST/DAST scans
+        - Deployed VPC, ECS, RDS, ALB, Lambda, KMS, S3, Glue across multi-cloud environments
+        - Migrated workloads to Azure (Virtual Networks, Firewall, AD integration)
+        - Automated RHEL/Windows config with Ansible, DSC, PowerShell (CIS compliance)
+        - Deployed monitoring stack (CloudWatch, Prometheus, Grafana) for zero-downtime deployments
+        - Improved team velocity by 35% as Scrum Master
 
     - title: Cloud Infrastructure Engineer
       institution: PT Boer Technology, Bogor, Indonesia
       year: July 2019 - Sept 2023
       description:
-        - Deployed multi-region OpenStack and Ceph-based private cloud platforms for 500+ enterprise clients with 99.9% availability
-        - Developed infrastructure automation using Python, Bash, and Go for reproducible deployments and cluster expansion
-        - Built monitoring and alerting pipelines (Prometheus, Grafana, Alertmanager); achieved 99.5-99.9% uptime across 300+ instances
-        - Integrated VMware vSphere, vSAN, and NSX with OpenShift and Pure Storage
-        - Built CI/CD pipelines using GitLab and Azure DevOps with security scans (OWASP ZAP, Burp Suite)
-        - Managed MySQL and PostgreSQL clusters; performed failover, recovery, and query optimization
-        - Containerized legacy applications (PHP, Django) into microservices with Docker and Kubernetes; improved deployment frequency by 10×
-        - Led migration across AWS, GCP, and Alibaba Cloud; achieved 40% cost savings and 60% performance improvement
+        - Built multi-region OpenStack/Ceph private cloud for 500+ clients with 99.9% availability
+        - Developed automation (Python, Bash, Go) for provisioning and lifecycle management
+        - Achieved 99.5-99.9% uptime across 300+ instances via Prometheus/Grafana/Alertmanager
+        - Integrated VMware vSphere, vSAN, NSX with OpenShift and Pure Storage
+        - Built CI/CD pipelines (GitLab, Azure DevOps) with OWASP ZAP, Burp Suite scans
+        - Containerized legacy apps (PHP, Django) into microservices; improved deploy frequency 10×
+        - Led AWS/GCP/Alibaba Cloud migration; achieved 40% cost savings, 60% performance gain
 
     - title: Freelance Trainer
       institution: Part-Time / Freelance, Indonesia
       year: 2021 - Present
       description:
-        - Delivered technical training to 1,000+ professionals across banking, government, and private sectors; 95%+ positive feedback
-        - Developed hands-on curricula for Mastercard Academy 2.0 and Google Bangkit Academy (GCP, AWS, Kubernetes, CI/CD, ELK)
+        - Trained 1,000+ professionals (banking, government, private sector); 95%+ positive feedback
+        - Developed curricula for Mastercard Academy 2.0, Google Bangkit Academy
+        - Delivered hands-on training on GCP, AWS, Kubernetes, CI/CD, ELK Stack
         - Led certification programs (CompTIA Linux+, Security+) and cloud workshops
 
 - title: Skills
@@ -79,48 +79,45 @@
   contents:
     - title: Cloud Platforms
       items:
-        - AWS (ECS, EKS, Lambda, EC2, S3, RDS, Aurora, DynamoDB, VPC, Transit Gateway, PrivateLink, WAF, CloudFront)
-        - Azure (Virtual Networks, Firewall, AD, Cost Management, DevOps, Pipelines)
-        - GCP (GKE, Cloud SQL, Cloud Functions, IAM)
-        - Alibaba Cloud (Function Compute, SLS, OSS)
-    - title: Infrastructure as Code
-      items:
-        - Terraform, Pulumi, CloudFormation, AWS CDK, Ansible, Helm
+        - AWS (ECS, Fargate, Lambda, EC2, VPC, Transit Gateway, PrivateLink, WAF, RDS, S3, CloudFront)
+        - Azure (Virtual Networks, Firewall, AD, Cost Management)
+        - GCP (GKE, Cloud SQL, Cloud Armor)
+        - Alibaba Cloud, OpenStack
     - title: Containers & Orchestration
       items:
-        - Kubernetes (EKS, GKE, K3s, OpenShift), Docker, Podman, Containerd, CRI-O
-    - title: CI/CD & Automation
+        - Kubernetes (EKS, GKE, K3s, OpenShift), Docker, Podman, Helm, Containerd
+    - title: IaC & Automation
       items:
-        - GitLab CI/CD, GitHub Actions, Jenkins, ArgoCD, AWS CodePipeline, Azure DevOps
+        - Terraform, Pulumi, CloudFormation, Ansible, AWS CDK
+    - title: CI/CD
+      items:
+        - GitLab CI/CD, GitHub Actions, Jenkins, ArgoCD, AWS CodePipeline
     - title: Observability
       items:
-        - CloudWatch, X-Ray, Prometheus, Grafana, ELK Stack, Datadog, OpenTelemetry, Grafana Loki
+        - CloudWatch, X-Ray, Prometheus, Grafana, ELK, Datadog, OpenTelemetry
     - title: Security & DevSecOps
       items:
-        - IAM, KMS, Secrets Manager, Security Hub, GuardDuty, SonarQube, Snyk, SAST/DAST, container image scanning
+        - IAM, KMS, Secrets Manager, Security Hub, GuardDuty, SonarQube, Snyk, SAST/DAST
     - title: Networking
       items:
-        - VPC, Subnetting, TCP/IP, VLANs, Firewalls, VPN, SD-WAN, mTLS, Service Mesh (Istio, Linkerd, Envoy)
-    - title: Programming & Scripting
+        - VPC, Transit Gateway, PrivateLink, Route 53, VPN, SD-WAN, Cisco, Mikrotik
+    - title: Programming
       items:
         - Python, Bash, Go, Java
 
 - title: Certifications
   type: list
   contents:
-    - HashiCorp Certified Terraform Associate (003)
-    - Linux Foundation Certified System Administrator (LFCS)
-    - AWS Certified Solutions Architect - Associate
-    - AWS Certified Cloud Practitioner
-    - Google Professional Cloud Architect
-    - Google Associate Cloud Engineer
-    - Microsoft Azure Administrator Associate (AZ-104)
-    - Microsoft Azure Fundamentals (AZ-900)
-    - CompTIA Security+ ce
+    - HashiCorp Terraform Associate (003)
+    - Linux Foundation LFCS, LFCA
+    - AWS Cloud Practitioner, Solutions Architect Associate
+    - CompTIA Security+
+    - Google Associate Cloud Engineer, Professional Cloud Architect
+    - Microsoft Azure Fundamentals (AZ-900), Azure Administrator (AZ-104)
+    - Oracle Cloud Foundations, Cloud Operations Associate
+    - Alibaba Cloud ACA Security, ACA Cloud Computing
+    - MikroTik MTCNA, MTCRE, MTCWE, MTCSE, MTCTCE, MTCUME, MTCINE
     - Certified OpenStack Administrator (COA)
-    - Oracle Cloud Infrastructure Foundations Associate
-    - Alibaba Cloud ACA (Security, Cloud Computing)
-    - MikroTik Certified (MTCNA, MTCRE, MTCWE, MTCSE, MTCTCE, MTCUME, MTCINE)
 
 - title: Awards & Recognition
   type: time_table
@@ -128,23 +125,23 @@
     - year: 2023 - Present
       items:
         - AWS Container Hero
-        - Google Developer Expert - Cloud Modern Architecture
+        - Google Developer Expert (Cloud Modern Architecture)
     - year: 2023 - 2024
       items:
         - CNCF Ambassador
 
-- title: Speaking & Community
+- title: Community & Speaking
   type: list
   contents:
-    - "Google Cloud Summit Jakarta 2025: Advanced Scheduling for AI/ML - Orchestrating Ray Applications with KubeRay and Kueue"
-    - "AWS Summit Singapore 2024: Multi-Cluster Security with Network Firewall - Consistent Protection for Distributed EKS"
-    - "Azure Community Conference 2021: Continuous Delivery using Spinnaker on Azure"
-    - More talks at https://misskecupbung.wordpress.com/talks
+    - Speaker at Google Cloud Summit Jakarta 2025 - Advanced Scheduling for AI/ML with KubeRay and Kueue
+    - Speaker at AWS Summit Singapore 2024 - Multi-Cluster Security with Network Firewall for EKS
+    - Speaker at Azure Community Conference 2021 - Continuous Delivery using Spinnaker on Azure
+    - More talks at <a href="https://misskecupbung.wordpress.com/talks">misskecupbung.wordpress.com/talks</a>
 
 - title: Organizations
   type: list
   contents:
-    - Kubernetes and Cloud Native Indonesia (2023 - Present)
-    - AWS User Group Indonesia (2020 - Present)
-    - Google Developers (2019 - Present)
-    - Infrastructure Team - BlankOn Linux Indonesia (2017 - 2020)
+    - Kubernetes and Cloud Native Indonesia (2023 - present)
+    - AWS User Group Indonesia (2020 - present)
+    - Google Developers (2019 - present)
+    - BlankOn Linux Indonesia - Infrastructure Team (2017 - 2020)
