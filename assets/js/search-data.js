@@ -18,14 +18,14 @@ ninja.data = [{
           },
         },{id: "nav-talks",
           title: "talks",
-          description: "Conference talks and presentations",
+          description: "Conference presentations at AWS Summit, Google Cloud Summit, and Azure Community Conference",
           section: "Navigation",
           handler: () => {
             window.location.href = "/talks/";
           },
         },{id: "nav-repositories",
           title: "repositories",
-          description: "",
+          description: "Open source projects and contributions on GitHub",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "nav-certifications",
           title: "certifications",
-          description: "Professional certifications and credentials",
+          description: "Cloud, DevOps, and networking certifications from AWS, Google, Azure, HashiCorp, Linux Foundation, and MikroTik",
           section: "Navigation",
           handler: () => {
             window.location.href = "/certifications/";
