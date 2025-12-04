@@ -9,8 +9,6 @@ nav_order: 6
 
 <div class="certifications">
 
-## Professional Certifications
-
 <div class="text-center mb-4">
   <a href="https://www.credly.com/users/anandadwir/badges" target="_blank" class="btn btn-primary btn-lg">
     <i class="fa-solid fa-certificate me-2"></i> View on Credly
