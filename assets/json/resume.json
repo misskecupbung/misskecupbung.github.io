@@ -214,85 +214,43 @@
       "name": "Cloud Platforms",
       "level": "Expert",
       "icon": "fa-solid fa-cloud",
-      "keywords": [
-        "AWS (ECS, Lambda, VPC, RDS, S3)",
-        "Azure (Virtual Networks, Firewall)",
-        "GCP (GKE, Cloud SQL)",
-        "Alibaba Cloud",
-        "OpenStack"
-      ]
+      "keywords": ["AWS (ECS, Lambda, VPC, RDS, S3)", "Azure (Virtual Networks, Firewall)", "GCP (GKE, Cloud SQL)", "Alibaba Cloud", "OpenStack"]
     },
     {
       "name": "Containers & Orchestration",
       "level": "Expert",
       "icon": "fa-brands fa-docker",
-      "keywords": [
-        "Kubernetes (EKS, GKE, K3s)",
-        "Docker",
-        "Podman",
-        "Helm",
-        "OpenShift"
-      ]
+      "keywords": ["Kubernetes (EKS, GKE, K3s)", "Docker", "Podman", "Helm", "OpenShift"]
     },
     {
       "name": "IaC & Automation",
       "level": "Expert",
       "icon": "fa-solid fa-code",
-      "keywords": [
-        "Terraform",
-        "Pulumi",
-        "CloudFormation",
-        "Ansible",
-        "AWS CDK"
-      ]
+      "keywords": ["Terraform", "Pulumi", "CloudFormation", "Ansible", "AWS CDK"]
     },
     {
       "name": "CI/CD",
       "level": "Expert",
       "icon": "fa-solid fa-gears",
-      "keywords": [
-        "GitLab CI/CD",
-        "GitHub Actions",
-        "Jenkins",
-        "ArgoCD",
-        "AWS CodePipeline"
-      ]
+      "keywords": ["GitLab CI/CD", "GitHub Actions", "Jenkins", "ArgoCD", "AWS CodePipeline"]
     },
     {
       "name": "Observability",
       "level": "Expert",
       "icon": "fa-solid fa-chart-line",
-      "keywords": [
-        "CloudWatch",
-        "Prometheus",
-        "Grafana",
-        "ELK Stack",
-        "OpenTelemetry"
-      ]
+      "keywords": ["CloudWatch", "Prometheus", "Grafana", "ELK Stack", "OpenTelemetry"]
     },
     {
       "name": "Security & DevSecOps",
       "level": "Expert",
       "icon": "fa-solid fa-shield",
-      "keywords": [
-        "IAM",
-        "KMS",
-        "Security Hub",
-        "SonarQube",
-        "Snyk",
-        "SAST/DAST"
-      ]
+      "keywords": ["IAM", "KMS", "Security Hub", "SonarQube", "Snyk", "SAST/DAST"]
     },
     {
       "name": "Programming",
       "level": "Advanced",
       "icon": "fa-solid fa-terminal",
-      "keywords": [
-        "Python",
-        "Bash",
-        "Go",
-        "Java"
-      ]
+      "keywords": ["Python", "Bash", "Go", "Java"]
     }
   ],
   "languages": [
@@ -311,22 +269,12 @@
     {
       "name": "Cloud Native",
       "icon": "fa-solid fa-cloud",
-      "keywords": [
-        "Kubernetes",
-        "Serverless",
-        "Microservices",
-        "Service Mesh"
-      ]
+      "keywords": ["Kubernetes", "Serverless", "Microservices", "Service Mesh"]
     },
     {
       "name": "DevOps & SRE",
       "icon": "fa-solid fa-gears",
-      "keywords": [
-        "Platform Engineering",
-        "GitOps",
-        "Observability",
-        "Automation"
-      ]
+      "keywords": ["Platform Engineering", "GitOps", "Observability", "Automation"]
     }
   ],
   "references": [],
@@ -334,11 +282,7 @@
     {
       "name": "Cloud File Transfer Platform",
       "summary": "Multi-environment AWS platform for secure file transfer across government agencies. Built with ECS, RDS, S3, and comprehensive observability.",
-      "highlights": [
-        "100TB+ daily data exchange",
-        "100+ agencies connected",
-        "35% latency reduction"
-      ],
+      "highlights": ["100TB+ daily data exchange", "100+ agencies connected", "35% latency reduction"],
       "startDate": "2024-10-01",
       "endDate": "",
       "url": ""
@@ -346,11 +290,7 @@
     {
       "name": "Private Cloud Platform",
       "summary": "Multi-region OpenStack and Ceph-based private cloud serving 500+ enterprise clients with 99.9% availability.",
-      "highlights": [
-        "500+ enterprise clients",
-        "99.9% availability",
-        "Automated provisioning with Terraform/Ansible"
-      ],
+      "highlights": ["500+ enterprise clients", "99.9% availability", "Automated provisioning with Terraform/Ansible"],
       "startDate": "2019-07-01",
       "endDate": "2023-09-01",
       "url": ""

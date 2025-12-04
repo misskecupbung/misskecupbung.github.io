@@ -12,7 +12,8 @@ nav_order: 6
     View all my certifications on <a href="https://www.credly.com/users/anandadwir" target="_blank">Credly</a>.
   </p>
 
-  {% if site.data.credly_badges and site.data.credly_badges.size > 0 %}
+{% if site.data.credly_badges and site.data.credly_badges.size > 0 %}
+
   <div class="row row-cols-1 row-cols-md-3 g-4">
     {% for badge in site.data.credly_badges %}
     <div class="col">

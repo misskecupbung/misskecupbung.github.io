@@ -12,7 +12,8 @@ nav_order: 3
     View all my presentations on <a href="https://speakerdeck.com/misskecupbung" target="_blank">Speaker Deck</a>.
   </p>
 
-  {% if site.data.speakerdeck_presentations and site.data.speakerdeck_presentations.size > 0 %}
+{% if site.data.speakerdeck_presentations and site.data.speakerdeck_presentations.size > 0 %}
+
   <div class="row row-cols-1 row-cols-md-2 g-4">
     {% for talk in site.data.speakerdeck_presentations %}
     <div class="col">
