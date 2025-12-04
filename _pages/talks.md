@@ -9,33 +9,6 @@ nav_order: 3
 
 <div class="talks">
 
-### 2025
-
-<div class="card mb-3">
-  <div class="card-body">
-    <h5 class="card-title">Advanced Scheduling for AI/ML: Orchestrating Ray Applications with KubeRay and Kueue</h5>
-    <p class="card-text text-muted"><i class="fa-solid fa-location-dot"></i> Google Cloud Summit Jakarta 2025</p>
-  </div>
-</div>
-
-### 2024
-
-<div class="card mb-3">
-  <div class="card-body">
-    <h5 class="card-title">Multi-Cluster Security with Network Firewall: Consistent Protection for Distributed EKS</h5>
-    <p class="card-text text-muted"><i class="fa-solid fa-location-dot"></i> AWS Summit Singapore 2024</p>
-  </div>
-</div>
-
-### 2021
-
-<div class="card mb-3">
-  <div class="card-body">
-    <h5 class="card-title">Continuous Delivery using Spinnaker on Azure</h5>
-    <p class="card-text text-muted"><i class="fa-solid fa-location-dot"></i> Azure Community Conference 2021</p>
-  </div>
-</div>
-
 ---
 
 ### Speaker Deck
