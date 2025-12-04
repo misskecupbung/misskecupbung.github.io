@@ -1,6 +1,6 @@
 ---
 layout: page
-title: talks
+title: Talks
 permalink: /talks/
 description: Conference presentations at AWS Summit, Google Cloud Summit, and Azure Community Conference
 nav: true
@@ -10,8 +10,6 @@ nav_order: 3
 <div class="talks">
 
 ---
-
-### Speaker Deck
 
 {% if site.data.speakerdeck_presentations and site.data.speakerdeck_presentations.size > 0 %}
 

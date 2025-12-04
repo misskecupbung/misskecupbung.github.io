@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /certifications/
-title: certifications
+title: Certifications
 description: Cloud, DevOps, and networking certifications from AWS, Google, Azure, HashiCorp, Linux Foundation, and MikroTik
 nav: true
 nav_order: 6
