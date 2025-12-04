@@ -25,6 +25,12 @@ impressum_path: # set to path to include impressum link in the footer, use the s
 back_to_top: true # set to false to disable the back to top button
 
 # -----------------------------------------------------------------------------
+# Credly & Speaker Deck
+# -----------------------------------------------------------------------------
+credly_username: anandadwir
+speakerdeck_username: misskecupbung
+
+# -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
 
@@ -129,25 +135,6 @@ external_sources:
     rss_url: https://medium.com/feed/@misskecupbung
 
 # -----------------------------------------------------------------------------
-# Newsletter
-# -----------------------------------------------------------------------------
-
-newsletter:
-  enabled: false
-  endpoint: # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
-  # https://loops.so/docs/forms/custom-form
-
-# -----------------------------------------------------------------------------
-# Collections
-# -----------------------------------------------------------------------------
-
-collections:
-  books:
-    output: true
-  projects:
-    output: true
-
-# -----------------------------------------------------------------------------
 # Jekyll settings
 # -----------------------------------------------------------------------------
 
@@ -246,8 +233,6 @@ jekyll-archives:
       year: "/blog/:year/"
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
-  books:
-    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
 display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
@@ -309,7 +294,7 @@ enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
-enable_project_categories: true # enables categorization of projects into multiple categories
+enable_project_categories: false # disabled - using Speaker Deck for talks
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
