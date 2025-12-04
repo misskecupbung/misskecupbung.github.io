@@ -3,6 +3,29 @@ github_users:
 
 repo_description_lines_max: 2
 
-# github_repos is auto-populated by the fetch-github-repos plugin
-# It fetches all repos from github_users, sorted by latest activity
-github_repos: []
+# Repos sorted by latest activity
+github_repos:
+  - misskecupbung/misskecupbung.github.io
+  - misskecupbung/aws-openvpn-stack
+  - misskecupbung/rhel-ansible-terraform-infra
+  - misskecupbung/Vikunja-k8s
+  - misskecupbung/ts-hello-cdk
+  - misskecupbung/lambda-alb-backend
+  - misskecupbung/lambda-invoke-logging
+  - misskecupbung/lambda-enrich-data
+  - misskecupbung/lambda-cwl-dashboard
+  - misskecupbung/vyos-example
+  - misskecupbung/step-function-lambda-aws
+  - misskecupbung/lambda-langchain
+  - misskecupbung/terraform-aws-vpc
+  - misskecupbung/tf-vpc-ec2
+  - misskecupbung/aws-proton-workshop-code
+  - misskecupbung/my-notes
+  - misskecupbung/labs
+  - misskecupbung/wp-amazon-eks
+  - misskecupbung/ecsdemo-frontend
+  - misskecupbung/elk-crud
+  - misskecupbung/cicd-k8s
+  - misskecupbung/k8s-istio-webinar
+  - misskecupbung/ecsdemo-nodejs
+  - misskecupbung/ecsdemo-crystal
