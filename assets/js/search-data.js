@@ -4,41 +4,41 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-blog",
-          title: "blog",
+          title: "Blog",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
           },
         },{id: "nav-talks",
-          title: "talks",
+          title: "Talks",
           description: "Conference presentations at AWS Summit, Google Cloud Summit, and Azure Community Conference",
           section: "Navigation",
           handler: () => {
             window.location.href = "/talks/";
           },
         },{id: "nav-repositories",
-          title: "repositories",
+          title: "Repositories",
           description: "Open source projects and contributions on GitHub",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
           },
         },{id: "nav-cv",
-          title: "cv",
+          title: "CV",
           description: "Senior Cloud &amp; DevOps Engineer with 6+ years of experience in AWS, Azure, GCP. AWS Container Hero and Google Developer Expert.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
         },{id: "nav-certifications",
-          title: "certifications",
+          title: "Certifications",
           description: "Cloud, DevOps, and networking certifications from AWS, Google, Azure, HashiCorp, Linux Foundation, and MikroTik",
           section: "Navigation",
           handler: () => {
