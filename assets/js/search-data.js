@@ -44,6 +44,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/certifications/";
           },
+        },{id: "nav-gallery",
+          title: "Gallery",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/gallery/";
+          },
         },{id: "post-aws-summit-singapore-2024-it-was-an-awsome-event",
         
           title: 'AWS Summit Singapore 2024: It was An AWSome Event! <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
@@ -53,17 +60,6 @@ ninja.data = [{
         handler: () => {
           
             window.open("https://misskecupbung.wordpress.com/2024/05/22/aws-summit-singapore-2024-it-was-an-awsome-event/", "_blank");
-          
-        },
-      },{id: "post-temuan-tangkapan-layar-berkas-kuliah",
-        
-          title: 'Temuan Tangkapan Layar Berkas Kuliah <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "Tadi sewaktu bongkar berkas kuliah yang lumayan menumpuk di drive, saya iseng coba lihat satu-satu termasuk foto-foto lama. Perjalanan selama hampir empat tahun yang kalau dipikir dan dilihat sekarang, keliatan sangat amat berkesan. 🙂 Salah satunya yang terlampir. Menurut saya pribadi, mata kuliah pengembangan game termasuk yang cukup sulit. Mungkin karena dari awal mindsetnya itu [&amp;#8230;]",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://misskecupbung.wordpress.com/2024/05/19/temuan-tangkapan-layar-berkas-kuliah/", "_blank");
           
         },
       },{id: "post-migrasi-database-di-mysql-on-premise-ke-cloud-sql-menggunakan-database-migration-service",
@@ -163,6 +159,17 @@ ninja.data = [{
         handler: () => {
           
             window.open("https://misskecupbung.wordpress.com/2022/10/06/google-cloud-gke-upgrade-using-blue-green-strategy/", "_blank");
+          
+        },
+      },{id: "post-google-cloud-deploying-a-static-web-application-to-google-cloud-storage-bucket-with-https-load-balancer",
+        
+          title: 'Google Cloud: Deploying a Static Web Application to Google Cloud Storage Bucket with... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "Hi all! I hope that you are doing well, safe, and healthy! In this journal, I would like to share how to deploy a static web application using the Google Cloud Storage bucket for hosting with HTTPS Load Balancer. So it will be safely accessible from outside. What makes it different from static web hosted [&amp;#8230;]",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://misskecupbung.wordpress.com/2022/09/22/google-cloud-deploying-a-static-web-application-to-google-cloud-storage-bucket-with-https-load-balancer/", "_blank");
           
         },
       },{
