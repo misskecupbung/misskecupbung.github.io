@@ -16,14 +16,14 @@ nav_order: 3
 </div>
 
 {% if site.data.talks.size > 0 %}
+
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
   {% for talk in site.data.talks %}
+  {% assign thumb_name = talk.filename | remove: ".pdf" | append: ".png" %}
   <div class="col">
     <div class="card h-100 slide-card">
       <a href="{{ '/assets/slides/' | append: talk.filename | relative_url }}" target="_blank" class="slide-thumbnail">
-        <div class="slide-preview">
-          <i class="fa-solid fa-file-pdf"></i>
-        </div>
+        <img src="{{ '/assets/img/talks/' | append: thumb_name | relative_url }}" alt="{{ talk.title }}" class="card-img-top slide-thumb-img">
       </a>
       <div class="card-body d-flex flex-column">
         <h5 class="card-title mb-2">{{ talk.title }}</h5>
@@ -64,22 +64,19 @@ nav_order: 3
 .slide-thumbnail {
   display: block;
   text-decoration: none;
+  overflow: hidden;
 }
 
-.slide-preview {
-  height: 120px;
-  background: linear-gradient(135deg, var(--global-theme-color) 0%, #a8c0e8 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  color: white;
-  opacity: 0.9;
-  transition: opacity 0.2s ease;
+.slide-thumb-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.3s ease;
 }
 
-.slide-card:hover .slide-preview {
-  opacity: 1;
+.slide-card:hover .slide-thumb-img {
+  transform: scale(1.05);
 }
 
 .slide-card .card-title {
