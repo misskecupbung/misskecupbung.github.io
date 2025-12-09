@@ -69,9 +69,10 @@ nav_order: 3
 
 .slide-thumb-img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
-  object-position: top;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #f8f9fa;
   transition: transform 0.3s ease;
 }
 
