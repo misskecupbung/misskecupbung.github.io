@@ -229,13 +229,6 @@ ninja.data = [{
           window.open("https://twitter.com/misskecupbung", "_blank");
         },
       },{
-        id: 'social-speakerdeck_username',
-        title: 'Speakerdeck_username',
-        section: 'Socials',
-        handler: () => {
-          window.open("", "_blank");
-        },
-      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
