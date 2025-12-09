@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-talks",
           title: "Talks",
-          description: "Conference presentations at AWS Summit, Google Cloud Summit, and Azure Community Conference",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/talks/";
