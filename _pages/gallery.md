@@ -40,9 +40,4 @@ nav_order: 7
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-</style> {
-  .gallery-item img {
-    height: 180px;
-  }
-}
 </style>

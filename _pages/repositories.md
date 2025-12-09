@@ -9,8 +9,6 @@ nav_order: 4
 
 <div class="repositories">
 
-## GitHub Projects
-
 <div class="text-center mb-4">
   <a href="https://github.com/misskecupbung" target="_blank" class="btn btn-dark btn-lg">
     <i class="fa-brands fa-github me-2"></i> View GitHub Profile
