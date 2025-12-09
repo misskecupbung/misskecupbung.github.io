@@ -28,6 +28,7 @@ back_to_top: true # set to false to disable the back to top button
 # -----------------------------------------------------------------------------
 credly_username: anandadwir
 speakerdeck_username: misskecupbung
+google_photos_album_url: https://photos.app.goo.gl/tjiChbGu6ZPXbwPr5
 
 # -----------------------------------------------------------------------------
 # Theme
