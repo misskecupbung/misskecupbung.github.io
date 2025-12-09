@@ -27,8 +27,71 @@ latest_posts:
 
 Hi, I'm Ananda Dwi Rahmawati — a Cloud and DevOps Engineer passionate about building scalable, secure, and automated infrastructure.
 
-With experience across AWS, Google Cloud, and Azure, I specialize in Kubernetes orchestration, infrastructure as code, and CI/CD pipelines. I'm an AWS Container Hero and Google Developer Expert for Cloud - Modern Architecture. I'm also an active speaker at cloud conferences including AWS Summit, Google Cloud Summit, and Azure Community Conference.
+<div class="highlights-grid">
+  <div class="highlight-card">
+    <i class="fa-brands fa-aws"></i>
+    <h4>AWS Container Hero</h4>
+    <p>Recognized for expertise in container technologies</p>
+  </div>
+  <div class="highlight-card">
+    <i class="fa-brands fa-google"></i>
+    <h4>GDE Cloud</h4>
+    <p>Google Developer Expert for Modern Architecture</p>
+  </div>
+  <div class="highlight-card">
+    <i class="fa-solid fa-microphone"></i>
+    <h4>Tech Speaker</h4>
+    <p>AWS Summit, Google Cloud Summit, KubeCon</p>
+  </div>
+  <div class="highlight-card">
+    <i class="fa-solid fa-certificate"></i>
+    <h4>20+ Certifications</h4>
+    <p>AWS, GCP, Azure, Terraform, Linux</p>
+  </div>
+</div>
 
-I hold multiple cloud certifications including AWS Solutions Architect, Google Professional Cloud Architect, and HashiCorp Terraform Associate. I'm also deeply experienced in networking with various MikroTik certifications.
+With experience across AWS, Google Cloud, and Azure, I specialize in Kubernetes orchestration, infrastructure as code, and CI/CD pipelines. I'm also an active speaker at cloud conferences and community events.
 
 When I'm not building infrastructure, you'll find me contributing to open source projects and sharing knowledge through technical talks and blog posts.
+
+<style>
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.highlight-card {
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-card i {
+  font-size: 2rem;
+  color: var(--global-theme-color);
+  margin-bottom: 0.75rem;
+}
+
+.highlight-card h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--global-text-color);
+}
+
+.highlight-card p {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  margin: 0;
+}
+</style>

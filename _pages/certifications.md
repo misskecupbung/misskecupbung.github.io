@@ -119,6 +119,40 @@ nav_order: 6
   object-fit: contain;
 }
 
+.cert-section {
+  margin-bottom: 2rem;
+}
+
+.cert-section table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--global-bg-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cert-section th {
+  background: var(--global-theme-color);
+  color: white;
+  font-weight: 600;
+  padding: 1rem;
+  text-align: left;
+}
+
+.cert-section td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.cert-section tr:last-child td {
+  border-bottom: none;
+}
+
+.cert-section tr:hover td {
+  background: rgba(var(--global-theme-color-rgb), 0.05);
+}
+
 .cert-card .card-title {
   font-size: 0.8rem;
   font-weight: 500;

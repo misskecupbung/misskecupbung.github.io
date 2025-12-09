@@ -2,14 +2,20 @@
 layout: page
 title: Talks
 permalink: /talks/
-description:
+description: Conference presentations and workshop slides on cloud, DevOps, and AI
 nav: true
 nav_order: 3
 ---
 
 <div class="talks">
 
-<div class="text-center mb-4">
+<div class="talks-header text-center mb-5">
+  <div class="talks-stats mb-4">
+    <div class="stat-item">
+      <span class="stat-number">{{ site.data.talks.size }}</span>
+      <span class="stat-label">Presentations</span>
+    </div>
+  </div>
   <a href="https://github.com/misskecupbung/misskecupbung.github.io/tree/main/assets/slides" target="_blank" class="btn btn-primary btn-lg">
     <i class="fa-solid fa-folder-open me-2"></i> Browse All Slides
   </a>
@@ -114,5 +120,31 @@ nav_order: 3
   border-radius: 25px;
   padding: 0.75rem 2rem;
   font-weight: 500;
+}
+
+.talks-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--global-theme-color);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 </style>
