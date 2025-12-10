@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /repositories/
-title:
+title: Repositories
 description:
 nav: true
 nav_order: 4
@@ -24,22 +24,6 @@ nav_order: 4
 </div>
 
 {% if site.data.github_repos_data and site.data.github_repos_data.size > 0 %}
-
-<nav aria-label="Repositories navigation" class="mb-4">
-  <ul class="pagination justify-content-center" id="paginationTop">
-    <li class="page-item" id="prevPageTop">
-      <a class="page-link" href="#" onclick="changePage(currentPage - 1); return false;" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <!-- Page numbers will be inserted by JavaScript -->
-    <li class="page-item" id="nextPageTop">
-      <a class="page-link" href="#" onclick="changePage(currentPage + 1); return false;" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4" id="reposGrid">
   {% for repo in site.data.github_repos_data %}
@@ -73,18 +57,8 @@ nav_order: 4
 </div>
 
 <nav aria-label="Repositories navigation" class="mt-4">
-  <ul class="pagination justify-content-center" id="paginationBottom">
-    <li class="page-item" id="prevPageBottom">
-      <a class="page-link" href="#" onclick="changePage(currentPage - 1); return false;" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <!-- Page numbers will be inserted by JavaScript -->
-    <li class="page-item" id="nextPageBottom">
-      <a class="page-link" href="#" onclick="changePage(currentPage + 1); return false;" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
+  <ul class="pagination pagination-lg justify-content-center" id="paginationNav">
+    <!-- Pagination will be inserted by JavaScript -->
   </ul>
 </nav>
 
@@ -232,25 +206,31 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function renderPagination() {
-  ['paginationTop', 'paginationBottom'].forEach(paginationId => {
-    const pagination = document.getElementById(paginationId);
-    const prevId = paginationId === 'paginationTop' ? 'prevPageTop' : 'prevPageBottom';
-    const nextId = paginationId === 'paginationTop' ? 'nextPageTop' : 'nextPageBottom';
-    const prevItem = document.getElementById(prevId);
-    const nextItem = document.getElementById(nextId);
-    
-    // Remove existing page numbers
-    const existingPages = pagination.querySelectorAll('.page-number');
-    existingPages.forEach(p => p.remove());
-    
-    // Add page numbers
-    for (let i = 1; i <= totalPages; i++) {
-      const li = document.createElement('li');
-      li.className = 'page-item page-number' + (i === currentPage ? ' active' : '');
-      li.innerHTML = `<a class="page-link" href="#" onclick="changePage(${i}); return false;">${i}</a>`;
-      pagination.insertBefore(li, nextItem);
-    }
-  });
+  const nav = document.getElementById('paginationNav');
+  nav.innerHTML = '';
+  
+  // Previous button
+  const prevLi = document.createElement('li');
+  prevLi.className = 'page-item';
+  prevLi.id = 'prevPage';
+  prevLi.innerHTML = '<a class="page-link" href="#" onclick="changePage(-1); return false;">&lt;</a>';
+  nav.appendChild(prevLi);
+  
+  // Page numbers
+  for (let i = 1; i <= totalPages; i++) {
+    const li = document.createElement('li');
+    li.className = 'page-item';
+    li.setAttribute('data-page', i);
+    li.innerHTML = `<a class="page-link" href="#" onclick="goToPage(${i}); return false;">${i}</a>`;
+    nav.appendChild(li);
+  }
+  
+  // Next button
+  const nextLi = document.createElement('li');
+  nextLi.className = 'page-item';
+  nextLi.id = 'nextPage';
+  nextLi.innerHTML = '<a class="page-link" href="#" onclick="changePage(1); return false;">&gt;</a>';
+  nav.appendChild(nextLi);
 }
 
 function showPage(page) {
@@ -264,22 +244,25 @@ function showPage(page) {
   
   currentPage = page;
   
-  // Update active states
-  document.querySelectorAll('.page-number').forEach((item, index) => {
-    item.classList.toggle('active', index % totalPages === (page - 1));
+  // Update active state
+  document.querySelectorAll('#paginationNav .page-item[data-page]').forEach(li => {
+    li.classList.toggle('active', parseInt(li.getAttribute('data-page')) === page);
   });
   
-  // Update prev/next disabled states
-  document.getElementById('prevPageTop').classList.toggle('disabled', page === 1);
-  document.getElementById('nextPageTop').classList.toggle('disabled', page === totalPages);
-  document.getElementById('prevPageBottom').classList.toggle('disabled', page === 1);
-  document.getElementById('nextPageBottom').classList.toggle('disabled', page === totalPages);
+  // Update disabled state
+  document.getElementById('prevPage').classList.toggle('disabled', page === 1);
+  document.getElementById('nextPage').classList.toggle('disabled', page === totalPages);
 }
 
-function changePage(newPage) {
+function goToPage(page) {
+  showPage(page);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function changePage(delta) {
+  const newPage = currentPage + delta;
   if (newPage >= 1 && newPage <= totalPages) {
-    showPage(newPage);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    goToPage(newPage);
   }
 }
 </script>
