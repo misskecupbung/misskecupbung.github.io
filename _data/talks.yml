@@ -1,91 +1,232 @@
-# Talks data - update dates and events as needed
+# Talks data organized by year
 
-- filename: building-scalable-infrastructure-rag-enabled-generative-ai-vertex-ai.pdf
-  title: Building Scalable Infrastructure for RAG-Enabled Generative AI with Vertex AI
-  date: 2025-12-05
-  event: Google Cloud Summit
+# ============================================
+# 2025
+# ============================================
 
 - filename: deploying-fastapi-chatbot-cloud-run-gemini-integration.pdf
   title: Deploying a FastAPI Chatbot to Cloud Run with Gemini Integration
   date: 2025-11-28
-  event: GDG DevFest
+  event: Google Developer Groups (GDG) DevFest
 
 - filename: deploying-fastapi-gemini-chatbot-memory-cloud-run.pdf
   title: Deploying a FastAPI Gemini Chatbot with Memory to Cloud Run
   date: 2025-11-20
-  event: Cloud Run Workshop
+  event: Google Developer Groups (GDG) DevFest
 
 - filename: deploying-adk-agent-containerized-service-cloud-run.pdf
   title: Deploying the ADK Agent as a Containerized Service on Cloud Run
   date: 2025-11-15
-  event: Google Cloud Next
-
-- filename: designing-observable-microservice-architectures-ml-pipelines-aws.pdf
-  title: Designing Observable Microservice Architectures for End-to-End ML Pipelines on AWS
-  date: 2025-10-25
-  event: AWS re:Invent
-
-- filename: observability-genai-apps-logging-metrics-tracing-gcp.pdf
-  title: "Observability for GenAI Apps: Logging, Metrics & Tracing on GCP"
-  date: 2025-10-10
-  event: SREcon
-
-- filename: reliable-scalable-ai-infrastructure-event-driven-architecture-google-cloud.pdf
-  title: Reliable and Scalable AI Infrastructure with Event-Driven Architecture on Google Cloud
-  date: 2025-09-28
-  event: Google Cloud Community Day
-
-- filename: kubevirt-observability-prometheus-grafana.pdf
-  title: KubeVirt Observability with Prometheus and Grafana
-  date: 2025-09-15
-  event: KubeCon
-
-- filename: optimizing-ai-inference-gke-reducing-costs-latency.pdf
-  title: Optimizing AI Inference on GKE - Reducing Costs & Latency
-  date: 2024-12-01
-  event: GDG DevFest
+  event: Google Developer Groups (GDG) DevFest
 
 - filename: hands-on-ai-agent-development-adk-mcp-server-cloud-run.pdf
   title: Hands-On AI Agent Development with ADK, MCP Server & Cloud Run
-  date: 2024-11-15
-  event: Google Cloud Next
+  date: 2025-11-08
+  event: DevFest Cloud Surabaya 2025
+
+- filename: observability-genai-apps-logging-metrics-tracing-gcp.pdf
+  title: "Observability for GenAI Apps: Logging, Metrics, & Tracing on GCP"
+  date: 2025-10-31
+  event: Road To Devfest Bandung 2025
+
+- filename: designing-observable-microservice-architectures-ml-pipelines-aws.pdf
+  title: Designing Observable Microservice Architectures for End-to-End ML Pipelines on AWS
+  date: 2025-08-02
+  event: AWS Community Day Malaysia 2025
+
+- filename: building-real-time-incident-analytics-apache-flink-kafka-openstack.pdf
+  title: Building Real-Time Incident Analytics with Apache Flink and Kafka on OpenStack
+  date: 2025-07-19
+  event: OpenInfra Days Indonesia 2025
+
+- filename: kubevirt-observability-prometheus-grafana.pdf
+  title: KubeVirt Observability with Prometheus and Grafana
+  date: 2025-06-24
+  event: KubeVirt Summit 2025
+
+- filename: optimizing-ai-inference-gke-reducing-costs-latency.pdf
+  title: Optimizing AI Inference on GKE - Reducing Costs & Latency
+  date: 2025-05-22
+  event: Google Cloud Summit Jakarta 2025
+
+- filename: building-scalable-infrastructure-rag-enabled-generative-ai-vertex-ai.pdf
+  title: Building Scalable Infrastructure for RAG-Enabled Generative AI with Vertex AI
+  date: 2025-05-11
+  event: Google Cloud Roadshow x Build with AI x International Women's Day Bali 2025
+
+- filename: reliable-scalable-ai-infrastructure-event-driven-architecture-google-cloud.pdf
+  title: Reliable and Scalable AI Infrastructure with Event-Driven Architecture on Google Cloud
+  date: 2025-04-27
+  event: Google Cloud Roadshow x Build with AI 2025 Jogjakarta
+
+# ============================================
+# 2024
+# ============================================
+
+- filename: introduction-to-kubernetes-gateway-api.pdf
+  title: Introduction to Kubernetes Gateway API
+  date: 2024-11-30
+  event: Kubernetes Community Days Indonesia 2024
 
 - filename: navigating-cloud-ai-ml-landscape-core-technologies-recruitment-trends.pdf
   title: Navigating Cloud AI/ML Landscape - Core Technologies & Recruitment Trends
   date: 2024-10-20
   event: Tech Career Summit
 
-- filename: observability-reliability-security-service-mesh-istio-amazon-eks.pdf
-  title: Observability, Reliability & Security with Service Mesh Istio on Amazon EKS
-  date: 2024-09-25
-  event: AWS Community Day
-
-- filename: introduction-to-kubernetes-gateway-api.pdf
-  title: Introduction to Kubernetes Gateway API
-  date: 2024-08-10
-  event: KubeCon
-
 - filename: deep-dive-aws-native-microservice-routing.pdf
   title: Deep Dive into AWS Native Microservice Routing
-  date: 2024-07-15
-  event: AWS Summit
+  date: 2024-08-02
+  event: AWS Community Day Singapore 2024
 
 - filename: dont-repeat-yourself-building-reusable-terraform-modules.pdf
   title: "Don't Repeat Yourself: Building Reusable Terraform Modules"
   date: 2024-06-20
-  event: HashiCorp User Group
+  event: HashiTalks Indonesia 2024
+
+- filename: observability-reliability-security-service-mesh-istio-amazon-eks.pdf
+  title: Observability, Reliability & Security with Service Mesh Istio on Amazon EKS
+  date: 2024-05-04
+  event: AWS Summit ASEAN 2024
+
+# ============================================
+# 2023
+# ============================================
 
 - filename: cloud-surfing-with-gcp-beginners-adventure.pdf
   title: "Cloud Surfing with GCP: A Beginner's Adventure"
-  date: 2024-05-12
-  event: Google Cloud Workshop
+  date: 2023-12-16
+  event: GDG DevFest Cloud HCM 2023
 
-- filename: iac-mudahnya-setup-server-dengan-kode.pdf
-  title: "IaC: Mudahnya Setup Server dengan Kode"
-  date: 2024-04-08
-  event: DevOps Indonesia Meetup
+- filename: simplifying-gke-multi-cluster-disaster-recovery-failover.pdf
+  title: Simplifying GKE Multi-Cluster for Disaster Recovery and Failover
+  date: 2023-12-03
+  event: GDG DevFest Depok 2023
+
+- filename: secure-reliable-observable-service-mesh-anthos-mesh.pdf
+  title: Secure, Reliable and Observable Service Mesh on Microservices with Anthos Mesh
+  date: 2023-11-18
+  event: GDG DevFest Cloud Surabaya 2023
 
 - filename: journey-to-success-building-professional-career-cloud-computing-linux.pdf
   title: Journey to Success - Building Professional Career in Cloud Computing & Linux
-  date: 2024-03-15
-  event: Linux Foundation Event
+  date: 2023-06-24
+  event: Release Party TeaLinux OS 12
+
+- filename: iac-mudahnya-setup-server-dengan-kode.pdf
+  title: "IaC: Mudahnya Setup Server dengan Kode"
+  date: 2023-03-11
+  event: Python Jogja Meetup
+
+# ============================================
+# 2022
+# ============================================
+
+- filename: introduction-aws-step-functions.pdf
+  title: Introduction to AWS Step Functions
+  date: 2022-12-10
+  event: AWS Community Day Indonesia Serverless 2022
+
+- filename: upgrade-gke-cluster-blue-green-strategy.pdf
+  title: Upgrade Your GKE Cluster using Blue-Green Strategy
+  date: 2022-12-03
+  event: DevFest Semarang 2022
+
+- filename: building-observability-microservices-workloads-google-cloud.pdf
+  title: Building Observability for Microservices Workloads on Google Cloud
+  date: 2022-11-26
+  event: DevFest Cloud Bandung 2022
+
+- filename: automation-deployment-gitops-google-cloud.pdf
+  title: Automation Deployment with GitOps on Google Cloud
+  date: 2022-11-20
+  event: DevFest Jogjakarta 2022
+
+# ============================================
+# 2021
+# ============================================
+
+- filename: deploy-php-application-aws-elastic-beanstalk.pdf
+  title: Deploy a PHP Application using AWS Elastic Beanstalk
+  date: 2021-12-22
+  event: PHP Community Indonesia Meetup
+
+- filename: create-aws-codecommit-trigger-lambda-function.pdf
+  title: Create an AWS CodeCommit Trigger for an AWS Lambda Function
+  date: 2021-12-18
+  event: AWS Community Day 2021
+
+- filename: concurrent-cache-efficient-build-container-image-buildkit.pdf
+  title: Concurrent and Cache-Efficient Build Container Image with BuildKit
+  date: 2021-11-27
+  event: Kubernetes Community Days 2021
+
+- filename: continuous-delivery-spinnaker-azure.pdf
+  title: Continuous Delivery using Spinnaker on Azure
+  date: 2021-10-31
+  event: Azure Community Conference 2021
+
+# ============================================
+# 2020
+# ============================================
+
+- filename: ""
+  title: Docker with Traefik
+  date: 2020-11-13
+  event: Btech Bicara
+
+- filename: continuous-delivery-spinnaker-kubernetes-cluster.pdf
+  title: Continuous Delivery with Spinnaker on Kubernetes Cluster
+  date: 2020-11-07
+  event: Open Infrastructure & Cloud Native Day Indonesia 2020
+
+- filename: weave-scope-visualization-monitoring-docker-kubernetes.pdf
+  title: Weave Scope - Visualization and Monitoring Tool for Docker and Kubernetes
+  date: 2020-09-15
+  event: Konferensi Pekerja Teknologi Indonesia
+
+- filename: lazydocker-terminal-docker-ui-managing-containers.pdf
+  title: "LazyDocker: The Terminal Docker UI for Managing Containers"
+  date: 2020-09-15
+  event: Konferensi Pekerja Teknologi Indonesia
+
+# ============================================
+# 2019
+# ============================================
+
+- filename: cicd-microservices-kubernetes.pdf
+  title: CI/CD for Microservices in Kubernetes
+  date: 2019-12-07
+  event: DevFest GDG Cloud Bandung 2019
+
+- filename: ""
+  title: "Linkerd 2.0: Observability & Reliability - A Cloud Native Service Mesh"
+  date: 2019-11-02
+  event: OpenInfra Days Indonesia 2019
+
+- filename: ""
+  title: "Linkerd 2.0: Observability & Reliability - A Cloud Native Service Mesh"
+  date: 2019-10-13
+  event: GNOME.Asia Summit Gresik 2019
+
+- filename: one-step-closer-openstack.pdf
+  title: One Step Closer to OpenStack
+  date: 2019-09-19
+  event: Meetup #3 OpenStack Indonesia
+
+# ============================================
+# 2018
+# ============================================
+
+- filename: ""
+  title: Getting Started OpenVPN Server with MikroTik on the Docker Container
+  date: 2018-10-19
+  event: MikroTik User Meeting (MUM) Indonesia 2018
+
+# ============================================
+# 2017
+# ============================================
+
+- filename: how-to-implement-wireless-qos-wmm-dscp-mikrotik.pdf
+  title: How To Implement Wireless QoS with WMM And DSCP In Mikrotik
+  date: 2017-10-28
+  event: Mikrotik User Meeting Yogyakarta 2017

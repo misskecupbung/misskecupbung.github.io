@@ -26,11 +26,21 @@ nav_order: 3
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
   {% for talk in site.data.talks %}
   {% assign thumb_name = talk.filename | remove: ".pdf" | append: ".png" %}
+  {% assign has_slides = talk.filename != "" %}
   <div class="col">
     <div class="card h-100 slide-card">
+      {% if has_slides %}
       <a href="{{ '/assets/slides/' | append: talk.filename | relative_url }}" target="_blank" class="slide-thumbnail">
         <img src="{{ '/assets/img/talks/' | append: thumb_name | relative_url }}" alt="{{ talk.title }}" class="card-img-top slide-thumb-img">
       </a>
+      {% else %}
+      <div class="slide-thumbnail no-slides-placeholder">
+        <div class="placeholder-content">
+          <i class="fa-solid fa-file-pdf fa-3x mb-2"></i>
+          <span>Slides unavailable</span>
+        </div>
+      </div>
+      {% endif %}
       <div class="card-body d-flex flex-column">
         <h5 class="card-title mb-2">{{ talk.title }}</h5>
         <div class="talk-meta mb-3">
@@ -38,9 +48,15 @@ nav_order: 3
           <span class="talk-date"><i class="fa-regular fa-calendar me-1"></i> {{ talk.date | date: "%b %d, %Y" }}</span>
         </div>
         <div class="mt-auto">
+          {% if has_slides %}
           <a href="{{ '/assets/slides/' | append: talk.filename | relative_url }}" target="_blank" class="btn btn-outline-primary btn-sm">
             <i class="fa-solid fa-eye me-1"></i> View Slides
           </a>
+          {% else %}
+          <span class="btn btn-outline-secondary btn-sm disabled">
+            <i class="fa-solid fa-eye-slash me-1"></i> No Slides
+          </span>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -146,5 +162,28 @@ nav_order: 3
   color: var(--global-text-color-light);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+.no-slides-placeholder {
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, #f0f2f5 0%, #e4e8ec 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-slides-placeholder .placeholder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+.slide-card .btn-outline-secondary.disabled {
+  border-radius: 20px;
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
+  opacity: 0.6;
 }
 </style>
