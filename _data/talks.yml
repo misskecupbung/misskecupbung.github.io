@@ -24,25 +24,25 @@
   date: 2025-11-08
   event: DevFest Cloud Surabaya 2025
 
+- filename: designing-observable-microservice-architectures-ml-pipelines-aws.pdf
+  title: Designing Observable Microservice Architectures for End-to-End ML Pipelines on AWS
+  date: 2025-11-02
+  event: AWS Community Day Malaysia 2025
+
 - filename: observability-genai-apps-logging-metrics-tracing-gcp.pdf
   title: "Observability for GenAI Apps: Logging, Metrics, & Tracing on GCP"
   date: 2025-10-31
   event: Road To Devfest Bandung 2025
 
-- filename: designing-observable-microservice-architectures-ml-pipelines-aws.pdf
-  title: Designing Observable Microservice Architectures for End-to-End ML Pipelines on AWS
+- filename: deep-dive-aws-native-microservice-routing.pdf
+  title: Deep Dive into AWS Native Microservice Routing
   date: 2025-08-02
-  event: AWS Community Day Malaysia 2025
+  event: AWS Community Day Singapore 2025
 
 - filename: building-real-time-incident-analytics-apache-flink-kafka-openstack.pdf
   title: Building Real-Time Incident Analytics with Apache Flink and Kafka on OpenStack
   date: 2025-07-19
   event: OpenInfra Days Indonesia 2025
-
-- filename: kubevirt-observability-prometheus-grafana.pdf
-  title: KubeVirt Observability with Prometheus and Grafana
-  date: 2025-06-24
-  event: KubeVirt Summit 2025
 
 - filename: optimizing-ai-inference-gke-reducing-costs-latency.pdf
   title: Optimizing AI Inference on GKE - Reducing Costs & Latency
@@ -73,11 +73,11 @@
   date: 2024-11-30
   event: Kubernetes Community Days Indonesia 2024
 
-- filename: deep-dive-aws-native-microservice-routing.pdf
-  title: Deep Dive into AWS Native Microservice Routing
-  date: 2024-08-02
-  event: AWS Community Day Singapore 2024
-
+- filename: kubevirt-observability-prometheus-grafana.pdf
+  title: KubeVirt Observability with Prometheus and Grafana
+  date: 2024-06-24
+  event: KubeVirt Summit 2024
+  
 - filename: dont-repeat-yourself-building-reusable-terraform-modules.pdf
   title: "Don't Repeat Yourself: Building Reusable Terraform Modules"
   date: 2024-06-20

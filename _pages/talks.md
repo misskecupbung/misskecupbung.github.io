@@ -26,21 +26,20 @@ nav_order: 3
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
   {% for talk in site.data.talks %}
   {% assign thumb_name = talk.filename | remove: ".pdf" | append: ".png" %}
-  {% assign has_slides = talk.filename.size > 0 %}
   <div class="col">
     <div class="card h-100 slide-card">
-      {% if has_slides %}
+      {% unless talk.filename == "" or talk.filename == nil or talk.filename == blank %}
       <a href="{{ '/assets/slides/' | append: talk.filename | relative_url }}" target="_blank" class="slide-thumbnail">
         <img src="{{ '/assets/img/talks/' | append: thumb_name | relative_url }}" alt="{{ talk.title }}" class="card-img-top slide-thumb-img">
       </a>
       {% else %}
       <div class="slide-thumbnail no-slides-placeholder">
         <div class="placeholder-content">
-          <i class="fa-solid fa-file-pdf fa-3x mb-2"></i>
-          <span>Slides unavailable</span>
+          <i class="fa-solid fa-file-powerpoint fa-4x"></i>
+          <span class="mt-2">Slides unavailable</span>
         </div>
       </div>
-      {% endif %}
+      {% endunless %}
       <div class="card-body d-flex flex-column">
         <h5 class="card-title mb-2">{{ talk.title }}</h5>
         <div class="talk-meta mb-3">
@@ -48,7 +47,7 @@ nav_order: 3
           <span class="talk-date"><i class="fa-regular fa-calendar me-1"></i> {{ talk.date | date: "%b %d, %Y" }}</span>
         </div>
         <div class="mt-auto">
-          {% if has_slides %}
+          {% unless talk.filename == "" or talk.filename == nil or talk.filename == blank %}
           <a href="{{ '/assets/slides/' | append: talk.filename | relative_url }}" target="_blank" class="btn btn-outline-primary btn-sm">
             <i class="fa-solid fa-eye me-1"></i> View Slides
           </a>
@@ -56,7 +55,7 @@ nav_order: 3
           <span class="btn btn-outline-secondary btn-sm disabled">
             <i class="fa-solid fa-eye-slash me-1"></i> No Slides
           </span>
-          {% endif %}
+          {% endunless %}
         </div>
       </div>
     </div>
@@ -166,18 +165,30 @@ nav_order: 3
 
 .no-slides-placeholder {
   aspect-ratio: 16 / 9;
-  background: linear-gradient(135deg, #f0f2f5 0%, #e4e8ec 100%);
+  background: linear-gradient(135deg, #e8eef5 0%, #d4dce8 100%);
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .no-slides-placeholder .placeholder-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #9ca3af;
-  font-size: 0.85rem;
+  color: var(--global-theme-color);
+  opacity: 0.6;
+}
+
+.no-slides-placeholder .placeholder-content i {
+  font-size: 3.5rem;
+}
+
+.no-slides-placeholder .placeholder-content span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .slide-card .btn-outline-secondary.disabled {
