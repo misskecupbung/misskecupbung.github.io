@@ -59,6 +59,11 @@
   date: 2025-04-27
   event: Google Cloud Roadshow x Build with AI 2025 Jogjakarta
 
+- filename: navigating-cloud-ai-ml-landscape-core-technologies-recruitment-trends.pdf
+  title: Navigating Cloud AI/ML Landscape - Core Technologies & Recruitment Trends
+  date: 2025-02-11
+  event: MSBU Konsultan Tech Talk
+
 # ============================================
 # 2024
 # ============================================
@@ -67,11 +72,6 @@
   title: Introduction to Kubernetes Gateway API
   date: 2024-11-30
   event: Kubernetes Community Days Indonesia 2024
-
-- filename: navigating-cloud-ai-ml-landscape-core-technologies-recruitment-trends.pdf
-  title: Navigating Cloud AI/ML Landscape - Core Technologies & Recruitment Trends
-  date: 2024-10-20
-  event: Tech Career Summit
 
 - filename: deep-dive-aws-native-microservice-routing.pdf
   title: Deep Dive into AWS Native Microservice Routing
@@ -82,11 +82,6 @@
   title: "Don't Repeat Yourself: Building Reusable Terraform Modules"
   date: 2024-06-20
   event: HashiTalks Indonesia 2024
-
-- filename: observability-reliability-security-service-mesh-istio-amazon-eks.pdf
-  title: Observability, Reliability & Security with Service Mesh Istio on Amazon EKS
-  date: 2024-05-04
-  event: AWS Summit ASEAN 2024
 
 # ============================================
 # 2023
@@ -112,10 +107,15 @@
   date: 2023-06-24
   event: Release Party TeaLinux OS 12
 
+- filename: observability-reliability-security-service-mesh-istio-amazon-eks.pdf
+  title: Observability, Reliability & Security with Service Mesh Istio on Amazon EKS
+  date: 2023-05-04
+  event: AWS Summit ASEAN 2023
+
 - filename: iac-mudahnya-setup-server-dengan-kode.pdf
   title: "IaC: Mudahnya Setup Server dengan Kode"
   date: 2023-03-11
-  event: Python Jogja Meetup
+  event: Python Jogja Meetup 2023
 
 # ============================================
 # 2022

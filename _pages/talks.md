@@ -26,7 +26,7 @@ nav_order: 3
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
   {% for talk in site.data.talks %}
   {% assign thumb_name = talk.filename | remove: ".pdf" | append: ".png" %}
-  {% assign has_slides = talk.filename != "" %}
+  {% assign has_slides = talk.filename.size > 0 %}
   <div class="col">
     <div class="card h-100 slide-card">
       {% if has_slides %}
