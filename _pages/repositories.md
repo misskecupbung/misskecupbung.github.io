@@ -9,9 +9,9 @@ nav_order: 4
 
 <div class="repositories">
 
-<div class="repos-header text-center mb-5">
+<div class="repos-header text-center mb-3">
   {% if site.data.github_repos_data %}
-  <div class="repos-stats mb-4">
+  <div class="repos-stats mb-2">
     <div class="stat-item">
       <span class="stat-number">{{ site.data.github_repos_data.size }}</span>
       <span class="stat-label">Repositories</span>
@@ -139,7 +139,7 @@ nav_order: 4
 }
 
 .stat-number {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--global-theme-color);
   line-height: 1;
