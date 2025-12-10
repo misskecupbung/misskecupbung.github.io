@@ -23,8 +23,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "nav-",
-          title: "",
+        },{id: "nav-repositories",
+          title: "Repositories",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -39,13 +39,13 @@ ninja.data = [{
           },
         },{id: "nav-certifications",
           title: "Certifications",
-          description: "Cloud, DevOps, and networking certifications from AWS, Google, Azure, HashiCorp, Linux Foundation, and MikroTik",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/certifications/";
           },
-        },{id: "nav-",
-          title: "",
+        },{id: "nav-gallery",
+          title: "Gallery",
           description: "",
           section: "Navigation",
           handler: () => {
