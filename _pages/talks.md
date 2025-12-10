@@ -23,8 +23,6 @@ nav_order: 3
 
 {% if site.data.talks.size > 0 %}
 
-
-
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4" id="talksGrid">
   {% for talk in site.data.talks %}
   {% assign thumb_name = talk.filename | remove: ".pdf" | append: ".png" %}
@@ -71,6 +69,7 @@ nav_order: 3
 </nav>
 
 {% else %}
+
 <p class="text-muted fst-italic text-center">No presentations available at the moment.</p>
 {% endif %}
 
