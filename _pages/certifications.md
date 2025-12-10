@@ -17,17 +17,21 @@ nav_order: 6
 
 {% if site.data.credly_badges and site.data.credly_badges.size > 0 %}
 
-<div class="pagination-controls mb-4">
-  <button class="btn btn-outline-primary btn-sm" id="prevPage" onclick="changePage(-1)">
-    <i class="fa-solid fa-chevron-left"></i> Previous
-  </button>
-  <span class="pagination-info mx-3">
-    Page <span id="currentPage">1</span> of <span id="totalPages">1</span>
-  </span>
-  <button class="btn btn-outline-primary btn-sm" id="nextPage" onclick="changePage(1)">
-    Next <i class="fa-solid fa-chevron-right"></i>
-  </button>
-</div>
+<nav aria-label="Certifications navigation" class="mb-4">
+  <ul class="pagination justify-content-center" id="paginationTop">
+    <li class="page-item" id="prevPageTop">
+      <a class="page-link" href="#" onclick="changePage(currentPage - 1); return false;" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <!-- Page numbers will be inserted by JavaScript -->
+    <li class="page-item" id="nextPageTop">
+      <a class="page-link" href="#" onclick="changePage(currentPage + 1); return false;" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 
 <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 mb-5" id="certsGrid">
   {% for badge in site.data.credly_badges %}
@@ -45,17 +49,21 @@ nav_order: 6
   {% endfor %}
 </div>
 
-<div class="pagination-controls mt-4 mb-4">
-  <button class="btn btn-outline-primary btn-sm" onclick="changePage(-1)">
-    <i class="fa-solid fa-chevron-left"></i> Previous
-  </button>
-  <span class="pagination-info mx-3">
-    Page <span class="currentPageBottom">1</span> of <span class="totalPagesBottom">1</span>
-  </span>
-  <button class="btn btn-outline-primary btn-sm" onclick="changePage(1)">
-    Next <i class="fa-solid fa-chevron-right"></i>
-  </button>
-</div>
+<nav aria-label="Certifications navigation" class="mt-4 mb-4">
+  <ul class="pagination justify-content-center" id="paginationBottom">
+    <li class="page-item" id="prevPageBottom">
+      <a class="page-link" href="#" onclick="changePage(currentPage - 1); return false;" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <!-- Page numbers will be inserted by JavaScript -->
+    <li class="page-item" id="nextPageBottom">
+      <a class="page-link" href="#" onclick="changePage(currentPage + 1); return false;" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 
 {% else %}
 
@@ -209,16 +217,28 @@ nav_order: 6
   font-size: 0.95rem;
 }
 
-.pagination-controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
+.pagination .page-item .page-link {
+  color: var(--global-theme-color);
+  border-color: var(--global-divider-color);
+  padding: 0.375rem 0.75rem;
 }
 
-.pagination-info {
-  font-size: 0.9rem;
+.pagination .page-item.active .page-link {
+  background-color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  color: white;
+}
+
+.pagination .page-item.disabled .page-link {
   color: var(--global-text-color-light);
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.pagination .page-item .page-link:hover {
+  background-color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  color: white;
 }
 </style>
 
@@ -233,11 +253,31 @@ document.addEventListener('DOMContentLoaded', function() {
   
   totalPages = Math.ceil(items.length / ITEMS_PER_PAGE);
   
-  document.getElementById('totalPages').textContent = totalPages;
-  document.querySelector('.totalPagesBottom').textContent = totalPages;
-  
+  renderPagination();
   showPage(1);
 });
+
+function renderPagination() {
+  ['paginationTop', 'paginationBottom'].forEach(paginationId => {
+    const pagination = document.getElementById(paginationId);
+    const prevId = paginationId === 'paginationTop' ? 'prevPageTop' : 'prevPageBottom';
+    const nextId = paginationId === 'paginationTop' ? 'nextPageTop' : 'nextPageBottom';
+    const prevItem = document.getElementById(prevId);
+    const nextItem = document.getElementById(nextId);
+    
+    // Remove existing page numbers
+    const existingPages = pagination.querySelectorAll('.page-number');
+    existingPages.forEach(p => p.remove());
+    
+    // Add page numbers
+    for (let i = 1; i <= totalPages; i++) {
+      const li = document.createElement('li');
+      li.className = 'page-item page-number' + (i === currentPage ? ' active' : '');
+      li.innerHTML = `<a class="page-link" href="#" onclick="changePage(${i}); return false;">${i}</a>`;
+      pagination.insertBefore(li, nextItem);
+    }
+  });
+}
 
 function showPage(page) {
   const items = document.querySelectorAll('#certsGrid > .col');
@@ -249,15 +289,20 @@ function showPage(page) {
   });
   
   currentPage = page;
-  document.getElementById('currentPage').textContent = page;
-  document.querySelector('.currentPageBottom').textContent = page;
   
-  document.getElementById('prevPage').disabled = page === 1;
-  document.getElementById('nextPage').disabled = page === totalPages;
+  // Update active states
+  document.querySelectorAll('.page-number').forEach((item, index) => {
+    item.classList.toggle('active', index % totalPages === (page - 1));
+  });
+  
+  // Update prev/next disabled states
+  document.getElementById('prevPageTop').classList.toggle('disabled', page === 1);
+  document.getElementById('nextPageTop').classList.toggle('disabled', page === totalPages);
+  document.getElementById('prevPageBottom').classList.toggle('disabled', page === 1);
+  document.getElementById('nextPageBottom').classList.toggle('disabled', page === totalPages);
 }
 
-function changePage(delta) {
-  const newPage = currentPage + delta;
+function changePage(newPage) {
   if (newPage >= 1 && newPage <= totalPages) {
     showPage(newPage);
     window.scrollTo({ top: 0, behavior: 'smooth' });

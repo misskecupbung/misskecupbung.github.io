@@ -23,17 +23,7 @@ nav_order: 3
 
 {% if site.data.talks.size > 0 %}
 
-<div class="pagination-controls mb-4">
-  <button class="btn btn-outline-primary btn-sm" id="prevPage" onclick="changePage(-1)">
-    <i class="fa-solid fa-chevron-left"></i> Previous
-  </button>
-  <span class="pagination-info mx-3">
-    Page <span id="currentPage">1</span> of <span id="totalPages">1</span>
-  </span>
-  <button class="btn btn-outline-primary btn-sm" id="nextPage" onclick="changePage(1)">
-    Next <i class="fa-solid fa-chevron-right"></i>
-  </button>
-</div>
+
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4" id="talksGrid">
   {% for talk in site.data.talks %}
@@ -75,17 +65,10 @@ nav_order: 3
   {% endfor %}
 </div>
 
-<div class="pagination-controls mt-4">
-  <button class="btn btn-outline-primary btn-sm" onclick="changePage(-1)">
-    <i class="fa-solid fa-chevron-left"></i> Previous
-  </button>
-  <span class="pagination-info mx-3">
-    Page <span class="currentPageBottom">1</span> of <span class="totalPagesBottom">1</span>
-  </span>
-  <button class="btn btn-outline-primary btn-sm" onclick="changePage(1)">
-    Next <i class="fa-solid fa-chevron-right"></i>
-  </button>
-</div>
+<nav aria-label="Talks page navigation">
+  <ul class="pagination pagination-lg justify-content-center" id="paginationNav">
+  </ul>
+</nav>
 
 {% else %}
 <p class="text-muted fst-italic text-center">No presentations available at the moment.</p>
@@ -222,18 +205,6 @@ nav_order: 3
   padding: 0.4rem 1rem;
   opacity: 0.6;
 }
-
-.pagination-controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.pagination-info {
-  font-size: 0.9rem;
-  color: var(--global-text-color-light);
-}
 </style>
 
 <script>
@@ -245,11 +216,37 @@ document.addEventListener('DOMContentLoaded', function() {
   const items = document.querySelectorAll('#talksGrid > .col');
   totalPages = Math.ceil(items.length / ITEMS_PER_PAGE);
   
-  document.getElementById('totalPages').textContent = totalPages;
-  document.querySelector('.totalPagesBottom').textContent = totalPages;
-  
+  renderPagination();
   showPage(1);
 });
+
+function renderPagination() {
+  const nav = document.getElementById('paginationNav');
+  nav.innerHTML = '';
+  
+  // Previous button
+  const prevLi = document.createElement('li');
+  prevLi.className = 'page-item';
+  prevLi.id = 'prevPage';
+  prevLi.innerHTML = '<a class="page-link" href="#" onclick="changePage(-1); return false;">&lt;</a>';
+  nav.appendChild(prevLi);
+  
+  // Page numbers
+  for (let i = 1; i <= totalPages; i++) {
+    const li = document.createElement('li');
+    li.className = 'page-item';
+    li.setAttribute('data-page', i);
+    li.innerHTML = `<a class="page-link" href="#" onclick="goToPage(${i}); return false;">${i}</a>`;
+    nav.appendChild(li);
+  }
+  
+  // Next button
+  const nextLi = document.createElement('li');
+  nextLi.className = 'page-item';
+  nextLi.id = 'nextPage';
+  nextLi.innerHTML = '<a class="page-link" href="#" onclick="changePage(1); return false;">&gt;</a>';
+  nav.appendChild(nextLi);
+}
 
 function showPage(page) {
   const items = document.querySelectorAll('#talksGrid > .col');
@@ -261,18 +258,26 @@ function showPage(page) {
   });
   
   currentPage = page;
-  document.getElementById('currentPage').textContent = page;
-  document.querySelector('.currentPageBottom').textContent = page;
   
-  document.getElementById('prevPage').disabled = page === 1;
-  document.getElementById('nextPage').disabled = page === totalPages;
+  // Update active state
+  document.querySelectorAll('#paginationNav .page-item[data-page]').forEach(li => {
+    li.classList.toggle('active', parseInt(li.getAttribute('data-page')) === page);
+  });
+  
+  // Update disabled state
+  document.getElementById('prevPage').classList.toggle('disabled', page === 1);
+  document.getElementById('nextPage').classList.toggle('disabled', page === totalPages);
+}
+
+function goToPage(page) {
+  showPage(page);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function changePage(delta) {
   const newPage = currentPage + delta;
   if (newPage >= 1 && newPage <= totalPages) {
-    showPage(newPage);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    goToPage(newPage);
   }
 }
 </script>
