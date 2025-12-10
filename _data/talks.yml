@@ -39,10 +39,25 @@
   date: 2025-08-02
   event: AWS Community Day Singapore 2025
 
+- filename: simplifying-llm-serving-pipelines-gke-inference-gateway.pdf
+  title: Simplifying LLM Serving Pipelines with GKE Inference Gateway
+  date: 2025-07-27
+  event: Google I/O Extended Jogja 2025
+
 - filename: building-real-time-incident-analytics-apache-flink-kafka-openstack.pdf
   title: Building Real-Time Incident Analytics with Apache Flink and Kafka on OpenStack
   date: 2025-07-19
   event: OpenInfra Days Indonesia 2025
+
+- filename: choosing-the-right-mlops-tools-on-kubernetes.pdf
+  title: Choosing The Right MLOps Tools on Kubernetes
+  date: 2025-07-03
+  event: DeployCamp Webinar 4
+
+- filename: advanced-scheduling-ai-ml-orchestrating-ray-applications-kuberay-kueue.pdf
+  title: "Advanced Scheduling for AI/ML: Orchestrating Ray Applications with KubeRay and Kueue"
+  date: 2025-05-22
+  event: Google Cloud Summit Jakarta 2025
 
 - filename: optimizing-ai-inference-gke-reducing-costs-latency.pdf
   title: Optimizing AI Inference on GKE - Reducing Costs & Latency
@@ -77,11 +92,21 @@
   title: KubeVirt Observability with Prometheus and Grafana
   date: 2024-06-24
   event: KubeVirt Summit 2024
-  
+
 - filename: dont-repeat-yourself-building-reusable-terraform-modules.pdf
   title: "Don't Repeat Yourself: Building Reusable Terraform Modules"
   date: 2024-06-20
   event: HashiTalks Indonesia 2024
+
+- filename: designing-scalable-secure-cloud-architecture-for-the-future.pdf
+  title: Designing a Scalable and Secure Cloud Architecture for the Future
+  date: 2024-05-05
+  event: GDSC Muhammadiyah
+
+- filename: unleashing-power-ai-supercharge-vertex-ai-workflows-ai-hypercomputer.pdf
+  title: "Unleashing the Power of AI: Supercharge Your Vertex AI Workflows with the AI Hypercomputer"
+  date: 2024-04-20
+  event: International Women's Day Bogor 2024
 
 # ============================================
 # 2023
@@ -109,8 +134,13 @@
 
 - filename: observability-reliability-security-service-mesh-istio-amazon-eks.pdf
   title: Observability, Reliability & Security with Service Mesh Istio on Amazon EKS
-  date: 2023-05-04
+  date: 2023-06-06
   event: AWS Summit ASEAN 2023
+
+- filename: eks-autoscaling-with-karpenter.pdf
+  title: EKS Autoscaling with Karpenter
+  date: 2023-03-17
+  event: AWS x Dicoding LIVE Container 101
 
 - filename: iac-mudahnya-setup-server-dengan-kode.pdf
   title: "IaC: Mudahnya Setup Server dengan Kode"
@@ -135,6 +165,11 @@
   title: Building Observability for Microservices Workloads on Google Cloud
   date: 2022-11-26
   event: DevFest Cloud Bandung 2022
+
+- filename: ""
+  title: Workshop Istio and Service Mesh
+  date: 2022-11-27
+  event: Kubernetes and OpenInfra Days Indonesia 2022
 
 - filename: automation-deployment-gitops-google-cloud.pdf
   title: Automation Deployment with GitOps on Google Cloud
