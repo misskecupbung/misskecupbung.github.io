@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Talks
+title:
 permalink: /talks/
-description: Conference presentations and workshop slides on cloud, DevOps, and AI
+description:
 nav: true
 nav_order: 3
 ---
