@@ -17,7 +17,19 @@ nav_order: 6
 
 {% if site.data.credly_badges and site.data.credly_badges.size > 0 %}
 
-<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 mb-5">
+<div class="pagination-controls mb-4">
+  <button class="btn btn-outline-primary btn-sm" id="prevPage" onclick="changePage(-1)">
+    <i class="fa-solid fa-chevron-left"></i> Previous
+  </button>
+  <span class="pagination-info mx-3">
+    Page <span id="currentPage">1</span> of <span id="totalPages">1</span>
+  </span>
+  <button class="btn btn-outline-primary btn-sm" id="nextPage" onclick="changePage(1)">
+    Next <i class="fa-solid fa-chevron-right"></i>
+  </button>
+</div>
+
+<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 mb-5" id="certsGrid">
   {% for badge in site.data.credly_badges %}
   <div class="col">
     <div class="card h-100 text-center cert-card">
@@ -31,6 +43,18 @@ nav_order: 6
     </div>
   </div>
   {% endfor %}
+</div>
+
+<div class="pagination-controls mt-4 mb-4">
+  <button class="btn btn-outline-primary btn-sm" onclick="changePage(-1)">
+    <i class="fa-solid fa-chevron-left"></i> Previous
+  </button>
+  <span class="pagination-info mx-3">
+    Page <span class="currentPageBottom">1</span> of <span class="totalPagesBottom">1</span>
+  </span>
+  <button class="btn btn-outline-primary btn-sm" onclick="changePage(1)">
+    Next <i class="fa-solid fa-chevron-right"></i>
+  </button>
 </div>
 
 {% else %}
@@ -184,4 +208,59 @@ nav_order: 6
 .certifications table {
   font-size: 0.95rem;
 }
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pagination-info {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
 </style>
+
+<script>
+const ITEMS_PER_PAGE = 16;
+let currentPage = 1;
+let totalPages = 1;
+
+document.addEventListener('DOMContentLoaded', function() {
+  const items = document.querySelectorAll('#certsGrid > .col');
+  if (items.length === 0) return;
+  
+  totalPages = Math.ceil(items.length / ITEMS_PER_PAGE);
+  
+  document.getElementById('totalPages').textContent = totalPages;
+  document.querySelector('.totalPagesBottom').textContent = totalPages;
+  
+  showPage(1);
+});
+
+function showPage(page) {
+  const items = document.querySelectorAll('#certsGrid > .col');
+  const start = (page - 1) * ITEMS_PER_PAGE;
+  const end = start + ITEMS_PER_PAGE;
+  
+  items.forEach((item, index) => {
+    item.style.display = (index >= start && index < end) ? 'block' : 'none';
+  });
+  
+  currentPage = page;
+  document.getElementById('currentPage').textContent = page;
+  document.querySelector('.currentPageBottom').textContent = page;
+  
+  document.getElementById('prevPage').disabled = page === 1;
+  document.getElementById('nextPage').disabled = page === totalPages;
+}
+
+function changePage(delta) {
+  const newPage = currentPage + delta;
+  if (newPage >= 1 && newPage <= totalPages) {
+    showPage(newPage);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+</script>

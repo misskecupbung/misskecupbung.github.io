@@ -25,8 +25,20 @@ nav_order: 4
 
 {% if site.data.github_repos_data and site.data.github_repos_data.size > 0 %}
 
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
-  {% for repo in site.data.github_repos_data limit:18 %}
+<div class="pagination-controls mb-4">
+  <button class="btn btn-outline-primary btn-sm" id="prevPage" onclick="changePage(-1)">
+    <i class="fa-solid fa-chevron-left"></i> Previous
+  </button>
+  <span class="pagination-info mx-3">
+    Page <span id="currentPage">1</span> of <span id="totalPages">1</span>
+  </span>
+  <button class="btn btn-outline-primary btn-sm" id="nextPage" onclick="changePage(1)">
+    Next <i class="fa-solid fa-chevron-right"></i>
+  </button>
+</div>
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4" id="reposGrid">
+  {% for repo in site.data.github_repos_data %}
   <div class="col">
     <div class="card h-100 repo-card">
       <div class="card-body d-flex flex-column">
@@ -56,14 +68,17 @@ nav_order: 4
   {% endfor %}
 </div>
 
-{% if site.data.github_repos_data.size > 18 %}
-
-<div class="text-center mt-4">
-  <a href="https://github.com/misskecupbung?tab=repositories" target="_blank" class="btn btn-outline-primary btn-lg">
-    View all {{ site.data.github_repos_data.size }} repositories
-  </a>
+<div class="pagination-controls mt-4">
+  <button class="btn btn-outline-primary btn-sm" onclick="changePage(-1)">
+    <i class="fa-solid fa-chevron-left"></i> Previous
+  </button>
+  <span class="pagination-info mx-3">
+    Page <span class="currentPageBottom">1</span> of <span class="totalPagesBottom">1</span>
+  </span>
+  <button class="btn btn-outline-primary btn-sm" onclick="changePage(1)">
+    Next <i class="fa-solid fa-chevron-right"></i>
+  </button>
 </div>
-{% endif %}
 
 {% else %}
 
@@ -169,4 +184,57 @@ nav_order: 4
   color: var(--global-theme-color);
   margin-right: 0.25rem;
 }
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pagination-info {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
 </style>
+
+<script>
+const ITEMS_PER_PAGE = 12;
+let currentPage = 1;
+let totalPages = 1;
+
+document.addEventListener('DOMContentLoaded', function() {
+  const items = document.querySelectorAll('#reposGrid > .col');
+  totalPages = Math.ceil(items.length / ITEMS_PER_PAGE);
+  
+  document.getElementById('totalPages').textContent = totalPages;
+  document.querySelector('.totalPagesBottom').textContent = totalPages;
+  
+  showPage(1);
+});
+
+function showPage(page) {
+  const items = document.querySelectorAll('#reposGrid > .col');
+  const start = (page - 1) * ITEMS_PER_PAGE;
+  const end = start + ITEMS_PER_PAGE;
+  
+  items.forEach((item, index) => {
+    item.style.display = (index >= start && index < end) ? 'block' : 'none';
+  });
+  
+  currentPage = page;
+  document.getElementById('currentPage').textContent = page;
+  document.querySelector('.currentPageBottom').textContent = page;
+  
+  document.getElementById('prevPage').disabled = page === 1;
+  document.getElementById('nextPage').disabled = page === totalPages;
+}
+
+function changePage(delta) {
+  const newPage = currentPage + delta;
+  if (newPage >= 1 && newPage <= totalPages) {
+    showPage(newPage);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+</script>
