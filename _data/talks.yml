@@ -4,21 +4,6 @@
 # 2025
 # ============================================
 
-- filename: deploying-fastapi-chatbot-cloud-run-gemini-integration.pdf
-  title: Deploying a FastAPI Chatbot to Cloud Run with Gemini Integration
-  date: 2025-11-28
-  event: Google Developer Groups (GDG) DevFest
-
-- filename: deploying-fastapi-gemini-chatbot-memory-cloud-run.pdf
-  title: Deploying a FastAPI Gemini Chatbot with Memory to Cloud Run
-  date: 2025-11-20
-  event: Google Developer Groups (GDG) DevFest
-
-- filename: deploying-adk-agent-containerized-service-cloud-run.pdf
-  title: Deploying the ADK Agent as a Containerized Service on Cloud Run
-  date: 2025-11-15
-  event: Google Developer Groups (GDG) DevFest
-
 - filename: hands-on-ai-agent-development-adk-mcp-server-cloud-run.pdf
   title: Hands-On AI Agent Development with ADK, MCP Server & Cloud Run
   date: 2025-11-08
@@ -26,7 +11,7 @@
 
 - filename: designing-observable-microservice-architectures-ml-pipelines-aws.pdf
   title: Designing Observable Microservice Architectures for End-to-End ML Pipelines on AWS
-  date: 2025-11-02
+  date: 2025-09-27
   event: AWS Community Day Malaysia 2025
 
 - filename: observability-genai-apps-logging-metrics-tracing-gcp.pdf
@@ -41,8 +26,13 @@
 
 - filename: simplifying-llm-serving-pipelines-gke-inference-gateway.pdf
   title: Simplifying LLM Serving Pipelines with GKE Inference Gateway
-  date: 2025-07-27
+  date: 2025-07-26
   event: Google I/O Extended Jogja 2025
+
+- filename: deploying-adk-agent-containerized-service-cloud-run.pdf
+  title: Deploying the ADK Agent as a Containerized Service on Cloud Run
+  date: 2025-07-25
+  event: Google Cloud Next Extended 2025 Surabaya
 
 - filename: building-real-time-incident-analytics-apache-flink-kafka-openstack.pdf
   title: Building Real-Time Incident Analytics with Apache Flink and Kafka on OpenStack
@@ -64,10 +54,20 @@
   date: 2025-05-22
   event: Google Cloud Summit Jakarta 2025
 
+- filename: deploying-fastapi-chatbot-cloud-run-gemini-integration.pdf
+  title: Deploying a FastAPI Chatbot to Cloud Run with Gemini Integration
+  date: 2025-05-15
+  event: Build with AI (BwAI) Workshop GDG on Campus Singapore University of Technology and Design
+
 - filename: building-scalable-infrastructure-rag-enabled-generative-ai-vertex-ai.pdf
   title: Building Scalable Infrastructure for RAG-Enabled Generative AI with Vertex AI
   date: 2025-05-11
   event: Google Cloud Roadshow x Build with AI x International Women's Day Bali 2025
+
+- filename: deploying-fastapi-gemini-chatbot-memory-cloud-run.pdf
+  title: Deploying a FastAPI Gemini Chatbot with Memory to Cloud Run
+  date: 2025-05-10
+  event: Google Cloud Roadshow x BWAI 2025 GDG Cloud Bandung
 
 - filename: reliable-scalable-ai-infrastructure-event-driven-architecture-google-cloud.pdf
   title: Reliable and Scalable AI Infrastructure with Event-Driven Architecture on Google Cloud
@@ -101,7 +101,7 @@
 - filename: designing-scalable-secure-cloud-architecture-for-the-future.pdf
   title: Designing a Scalable and Secure Cloud Architecture for the Future
   date: 2024-05-05
-  event: GDSC Muhammadiyah
+  event: GDSC Muhammadiyah Online Meetup 2024
 
 - filename: unleashing-power-ai-supercharge-vertex-ai-workflows-ai-hypercomputer.pdf
   title: "Unleashing the Power of AI: Supercharge Your Vertex AI Workflows with the AI Hypercomputer"
