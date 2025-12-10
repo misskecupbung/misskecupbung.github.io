@@ -16,16 +16,16 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "nav-talks",
-          title: "Talks",
-          description: "Conference presentations and workshop slides on cloud, DevOps, and AI",
+        },{id: "nav-",
+          title: "",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "nav-repositories",
-          title: "Repositories",
-          description: "Open source projects and contributions on GitHub",
+        },{id: "nav-",
+          title: "",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
@@ -44,8 +44,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/certifications/";
           },
-        },{id: "nav-gallery",
-          title: "Gallery",
+        },{id: "nav-",
+          title: "",
           description: "",
           section: "Navigation",
           handler: () => {
