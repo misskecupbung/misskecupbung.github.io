@@ -7,33 +7,33 @@ subtitle: Cloud & DevOps Engineer | AWS Container Hero | Google Developer Expert
 profile:
   align: right
   image: ananda.png
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
     <p>Singapore</p>
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false
+social: true
 
 announcements:
-  enabled: false # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
+  scrollable: true
+  limit: 5
 
 latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: true
+  limit: 3
 ---
 
 Hi, I'm Ananda Dwi Rahmawati — a Cloud and DevOps Engineer passionate about building scalable, secure, and automated infrastructure.
 
 <div class="highlights-grid">
-  <div class="highlight-card">
+  <div class="highlight-card badge-card">
     <img src="/assets/img/Hero_Container_Graphic-BBIkZZj9.svg" alt="AWS Container Hero Badge" class="badge-icon">
     <h4>AWS Container Hero</h4>
     <p>Recognized for expertise in container technologies</p>
   </div>
-  <div class="highlight-card">
+  <div class="highlight-card badge-card">
     <img src="/assets/img/GDE2025_DigitalBadges_Cloud-Modern.png" alt="Google Developer Expert Badge" class="badge-icon">
     <h4>GDE Cloud</h4>
     <p>Google Developer Expert for Modern Architecture</p>
@@ -57,9 +57,16 @@ When I'm not building infrastructure, you'll find me contributing to open source
 <style>
 .highlights-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin: 2rem 0;
+  clear: both;
+}
+
+@media (max-width: 992px) {
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 576px) {
@@ -75,6 +82,10 @@ When I'm not building infrastructure, you'll find me contributing to open source
   padding: 1.25rem;
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .highlight-card:hover {
@@ -83,27 +94,27 @@ When I'm not building infrastructure, you'll find me contributing to open source
 }
 
 .highlight-card i {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--global-theme-color);
   margin-bottom: 0.75rem;
 }
 
 .highlight-card .badge-icon {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   margin-bottom: 0.75rem;
 }
 
 .highlight-card h4 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--global-text-color);
 }
 
 .highlight-card p {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--global-text-color-light);
   margin: 0;
 }
