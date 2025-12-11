@@ -89,8 +89,8 @@ When I'm not building infrastructure, you'll find me contributing to open source
 }
 
 .highlight-card .badge-icon {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   margin-bottom: 0.75rem;
 }
