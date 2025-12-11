@@ -98,7 +98,7 @@ latest_posts:
 }
 
 .hero-image {
-  width: 200px;
+  width: 280px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -118,7 +118,7 @@ latest_posts:
   }
   
   .hero-image {
-    width: 150px;
+    width: 200px;
   }
 }
 
