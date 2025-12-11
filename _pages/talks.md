@@ -9,8 +9,8 @@ nav_order: 3
 
 <div class="talks">
 
-<div class="talks-header text-center mb-3">
-  <div class="talks-stats mb-2">
+<div class="talks-header text-center mb-5">
+  <div class="talks-stats mb-4">
     <div class="stat-item">
       <span class="stat-number">{{ site.data.talks.size }}</span>
       <span class="stat-label">Presentations</span>
@@ -157,7 +157,7 @@ nav_order: 3
 }
 
 .stat-number {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--global-theme-color);
   line-height: 1;

@@ -29,19 +29,19 @@ Hi, I'm Ananda Dwi Rahmawati — a Cloud and DevOps Engineer passionate about bu
 
 <div class="highlights-grid">
   <div class="highlight-card">
-    <i class="fa-brands fa-aws"></i>
+    <img src="/assets/img/Hero_Container_Graphic-BBIkZZj9.svg" alt="AWS Container Hero Badge" class="badge-icon">
     <h4>AWS Container Hero</h4>
     <p>Recognized for expertise in container technologies</p>
   </div>
   <div class="highlight-card">
-    <i class="fa-brands fa-google"></i>
+    <img src="/assets/img/GDE2025_DigitalBadges_Cloud-Modern.png" alt="Google Developer Expert Badge" class="badge-icon">
     <h4>GDE Cloud</h4>
     <p>Google Developer Expert for Modern Architecture</p>
   </div>
   <div class="highlight-card">
     <i class="fa-solid fa-microphone"></i>
-    <h4>Tech Speaker</h4>
-    <p>AWS Summit, Google Cloud Summit, KubeCon</p>
+    <h4>Woman in Tech Speaker</h4>
+    <p>AWS Summit, Google Cloud Summit, Open Source</p>
   </div>
   <div class="highlight-card">
     <i class="fa-solid fa-certificate"></i>
@@ -79,6 +79,13 @@ When I'm not building infrastructure, you'll find me contributing to open source
 .highlight-card i {
   font-size: 2rem;
   color: var(--global-theme-color);
+  margin-bottom: 0.75rem;
+}
+
+.highlight-card .badge-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
   margin-bottom: 0.75rem;
 }
 
