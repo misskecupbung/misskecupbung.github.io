@@ -28,6 +28,8 @@ latest_posts:
   <div class="hero-left">
     <p class="hero-subtitle">Cloud & DevOps Engineer | AWS Container Hero | Google Developer Expert Cloud - Modern Architecture</p>
     <p class="hero-intro">Hi, I'm Ananda Dwi Rahmawati — a Cloud and DevOps Engineer passionate about building scalable, secure, and automated infrastructure.</p>
+    <p class="hero-description">With experience across AWS, Google Cloud, and Azure, I specialize in Kubernetes orchestration, infrastructure as code, and CI/CD pipelines. I'm also an active speaker at cloud conferences and community events.</p>
+    <p class="hero-description">When I'm not building infrastructure, you'll find me contributing to open source projects and sharing knowledge through technical talks and blog posts.</p>
   </div>
   <div class="hero-right">
     <img src="/assets/img/ananda.png" alt="Ananda Dwi Rahmawati" class="hero-image">
@@ -58,10 +60,6 @@ latest_posts:
   </div>
 </div>
 
-With experience across AWS, Google Cloud, and Azure, I specialize in Kubernetes orchestration, infrastructure as code, and CI/CD pipelines. I'm also an active speaker at cloud conferences and community events.
-
-When I'm not building infrastructure, you'll find me contributing to open source projects and sharing knowledge through technical talks and blog posts.
-
 <style>
 .hero-section {
   display: flex;
@@ -84,6 +82,14 @@ When I'm not building infrastructure, you'll find me contributing to open source
   font-size: 1.1rem;
   line-height: 1.6;
   color: var(--global-text-color);
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--global-text-color);
+  margin-bottom: 0.75rem;
 }
 
 .hero-right {
