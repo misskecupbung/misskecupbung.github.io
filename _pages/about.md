@@ -57,16 +57,22 @@ When I'm not building infrastructure, you'll find me contributing to open source
 <style>
 .highlights-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   margin: 2rem 0;
+}
+
+@media (max-width: 576px) {
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .highlight-card {
   background: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 1.25rem;
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
