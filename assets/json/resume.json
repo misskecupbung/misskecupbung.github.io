@@ -104,14 +104,14 @@
       "location": "Yogyakarta, Indonesia",
       "url": "https://ugm.ac.id/",
       "area": "Software Engineering Technology",
-      "studyType": "S.Tr.Kom (Bachelor of Applied Science)",
+      "studyType": "S.Tr.Kom (Sarjana Terapan / Bachelor of Applied Science)",
       "startDate": "2019-07-01",
       "endDate": "2023-02-01",
       "score": "GPA: 3.84/4.00"
     }
   ],
   "awards": [
-    {"title": "AWS Container Hero", "date": "2023-01-01", "awarder": "Amazon Web Services", "summary": "Recognized for contributions to AWS container community (2023 - present)"},
+    {"title": "AWS Container Hero", "date": "2023-01-01", "awarder": "Amazon Web Services", "summary": "Recognized for contributions to AWS community (2023 - present)"},
     {"title": "Google Developer Expert - Cloud Modern Architecture", "date": "2023-01-01", "awarder": "Google", "summary": "Recognized expertise in Google Cloud and modern architecture (2023 - present)"},
     {"title": "CNCF Ambassador", "date": "2023-01-01", "awarder": "Cloud Native Computing Foundation", "summary": "Ambassador for cloud-native technologies (2023 - 2024)"}
   ],
