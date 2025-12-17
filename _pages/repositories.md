@@ -430,6 +430,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initial sort by recently updated
   sortItems('updated');
   
+  // Calculate total pages and show first page
+  totalPages = Math.ceil(filteredItems.length / ITEMS_PER_PAGE);
+  renderPagination();
+  showPage(1);
+  updateResultsCount();
+  
   // Event listeners
   document.getElementById('searchInput').addEventListener('input', applyFilters);
   document.getElementById('languageFilter').addEventListener('change', applyFilters);
