@@ -13,19 +13,19 @@ nav_order: 4
 {% assign total_forks = 0 %}
 {% assign languages = "" %}
 {% if site.data.github_repos_data %}
-  {% for repo in site.data.github_repos_data %}
-    {% assign total_stars = total_stars | plus: repo.stargazers_count %}
-    {% assign total_forks = total_forks | plus: repo.forks_count %}
-    {% if repo.language and repo.language != "" %}
-      {% unless languages contains repo.language %}
-        {% if languages == "" %}
-          {% assign languages = repo.language %}
-        {% else %}
-          {% assign languages = languages | append: "," | append: repo.language %}
-        {% endif %}
-      {% endunless %}
-    {% endif %}
-  {% endfor %}
+{% for repo in site.data.github_repos_data %}
+{% assign total_stars = total_stars | plus: repo.stargazers_count %}
+{% assign total_forks = total_forks | plus: repo.forks_count %}
+{% if repo.language and repo.language != "" %}
+{% unless languages contains repo.language %}
+{% if languages == "" %}
+{% assign languages = repo.language %}
+{% else %}
+{% assign languages = languages | append: "," | append: repo.language %}
+{% endif %}
+{% endunless %}
+{% endif %}
+{% endfor %}
 {% endif %}
 
 <div class="repos-header text-center mb-5">
