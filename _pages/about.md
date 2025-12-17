@@ -79,7 +79,7 @@ latest_posts:
 }
 
 .hero-intro {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   color: var(--global-text-color);
   margin-bottom: 1rem;
