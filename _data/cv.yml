@@ -18,15 +18,6 @@
     - name: About
       value: Senior Cloud & DevOps Engineer with 6+ years of experience architecting, automating, and optimizing public cloud solutions (AWS, Azure, GCP) for mission-critical environments. Proven track record in cost optimization, security, compliance, and leading cross-functional teams to deliver robust, scalable, and secure cloud platforms. Recognized as AWS Container Hero and Google Developer Expert. Expert in IaC (Terraform, Pulumi), CI/CD (GitLab, Jenkins), and cloud-native architectures. Passionate about documentation, process improvement, and mentoring.
 
-- title: Education
-  type: time_table
-  contents:
-    - title: S.Tr.Kom, Software Engineering Technology
-      institution: Universitas Gadjah Mada, Yogyakarta, Indonesia
-      year: Jul 2019 - Feb 2023
-      description:
-        - GPA 3.84/4.00
-
 - title: Experience
   type: time_table
   contents:
@@ -91,6 +82,53 @@
         - Led certification preparation programs for CompTIA Linux+ and Security+.
         - Created training materials, assessments, and lab exercises for practical learning outcomes.
 
+- title: Education
+  type: time_table
+  contents:
+    - title: S.Tr.Kom (Bachelor of Applied Science), Software Engineering Technology
+      institution: Universitas Gadjah Mada, Yogyakarta, Indonesia
+      year: Jul 2019 - Feb 2023
+      description:
+        - GPA 3.84/4.00
+
+- title: Awards & Recognition
+  type: time_table
+  contents:
+    - year: 2023 - Present
+      items:
+        - AWS Container Hero
+        - Google Developer Expert - Cloud Modern Architecture
+    - year: 2023 - 2024
+      items:
+        - CNCF Ambassador
+
+- title: Community Involvement
+  type: time_table
+  contents:
+    - title: Google Developer Expert (GDE)
+      institution: Google Developers & Community
+      year: 2020 - Present
+      description:
+        - Google Developer Expert for Cloud Modern Architecture
+
+    - title: AWS Container Hero
+      institution: AWS Community
+      year: 2020 - Present
+      description:
+        - Sharing knowledge and best practices for AWS as Container Hero and being involved in AWS User Group Indonesia
+
+    - title: Organizer
+      institution: Kubernetes and Cloud Native Indonesia
+      year: 2024 - Present
+      description:
+        - Organizing cloud-native community events
+
+    - title: Infrastructure Team
+      institution: BlankOn Linux Indonesia
+      year: 2017 - 2020
+      description:
+        - Contributed to Indonesian Linux distribution infrastructure
+
 - title: Skills
   type: nested_list
   contents:
@@ -153,49 +191,6 @@
       items:
         - GCC 1.0/2.0/+, CStack, StackOps, CloudSCAPE, CodeSCAPE
         - TechBiz, TechPass, IM8, SGTS tools, CAM, Splunk
-
-- title: Certifications
-  type: list
-  contents:
-    - HashiCorp Certified - Terraform Associate (003)
-    - Linux Foundation Certified System Administrator (LFCS)
-    - The Linux Foundation Certified IT Associate (LFCA)
-    - AWS Certified (Cloud Practitioner, Solutions Architect - Associate)
-    - CompTIA Security+ ce Certification
-    - Google Certified (Associate Cloud Engineer, Professional Cloud Architect)
-    - Microsoft Certified (Azure Fundamentals AZ-900, Azure Administrator Associate AZ-104)
-    - Oracle Cloud Infrastructure Certified (Foundations Associate, Cloud Operations Associate)
-    - Alibaba Cloud Certified (ACA Security Associate, ACA Cloud Computing)
-    - MikroTik Certified (MTCNA, MTCRE, MTCWE, MTCSE, MTCTCE, MTCUME, MTCINE)
-    - LSP TIK Indonesia (Junior Networking)
-    - Certified OpenStack Administrator (COA)
-
-- title: Awards & Recognition
-  type: time_table
-  contents:
-    - year: 2023 - Present
-      items:
-        - AWS Container Hero
-        - Google Developer Expert - Cloud Modern Architecture
-    - year: 2023 - 2024
-      items:
-        - CNCF Ambassador
-
-- title: Community & Speaking
-  type: list
-  contents:
-    - Speaker at Google Cloud Summit Jakarta 2025 - Advanced Scheduling for AI/ML - Orchestrating Ray Applications with KubeRay and Kueue
-    - Speaker at AWS Summit Singapore 2024 - Multi-Cluster Security with Network Firewall - Consistent Protection for Distributed EKS
-    - Speaker at Azure Community Conference 2021 - Continuous Delivery using Spinnaker on Azure
-    - Additional talks and contributions at <a href="https://misskecupbung.github.io">misskecupbung.github.io</a>
-
-- title: Organizations
-  type: list
-  contents:
-    - Kubernetes and Cloud Native Indonesia (2023 - present)
-    - AWS User Group Indonesia (2020 - present)
-    - Google Developers (2020 - present)
-    - Infrastructure Team - BlankOn Linux Indonesia (2017 - 2020)
 
 - title: Links
   type: map

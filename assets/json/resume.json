@@ -12,16 +12,8 @@
       "countryCode": "SG"
     },
     "profiles": [
-      {
-        "network": "LinkedIn",
-        "username": "anandadwir",
-        "url": "https://linkedin.com/in/anandadwir"
-      },
-      {
-        "network": "GitHub",
-        "username": "misskecupbung",
-        "url": "https://github.com/misskecupbung"
-      }
+      {"network": "LinkedIn", "username": "anandadwir", "url": "https://linkedin.com/in/anandadwir"},
+      {"network": "GitHub", "username": "misskecupbung", "url": "https://github.com/misskecupbung"}
     ]
   },
   "work": [
@@ -106,30 +98,47 @@
       ]
     }
   ],
-  "volunteer": [
+  "education": [
+    {
+      "institution": "Universitas Gadjah Mada",
+      "location": "Yogyakarta, Indonesia",
+      "url": "https://ugm.ac.id/",
+      "area": "Software Engineering Technology",
+      "studyType": "S.Tr.Kom (Bachelor of Applied Science)",
+      "startDate": "2019-07-01",
+      "endDate": "2023-02-01",
+      "score": "GPA: 3.84/4.00"
+    }
+  ],
+  "awards": [
+    {"title": "AWS Container Hero", "date": "2023-01-01", "awarder": "Amazon Web Services", "summary": "Recognized for contributions to AWS container community (2023 - present)"},
+    {"title": "Google Developer Expert - Cloud Modern Architecture", "date": "2023-01-01", "awarder": "Google", "summary": "Recognized expertise in Google Cloud and modern architecture (2023 - present)"},
+    {"title": "CNCF Ambassador", "date": "2023-01-01", "awarder": "Cloud Native Computing Foundation", "summary": "Ambassador for cloud-native technologies (2023 - 2024)"}
+  ],
+  "community": [
+    {
+      "organization": "Google Developers & Community",
+      "position": "Google Developer Expert (GDE)",
+      "url": "",
+      "startDate": "2020-01-01",
+      "endDate": "",
+      "summary": "Google Developer Expert for Cloud Modern Architecture"
+    },
+    {
+      "organization": "AWS Community",
+      "position": "AWS Container Hero",
+      "url": "",
+      "startDate": "2020-01-01",
+      "endDate": "",
+      "summary": "Sharing knowledge and best practices for AWS as Container Hero and being involved in AWS User Group Indonesia"
+    },
     {
       "organization": "Kubernetes and Cloud Native Indonesia",
-      "position": "Community Member",
+      "position": "Organizer",
       "url": "",
-      "startDate": "2023-01-01",
+      "startDate": "2024-09-01",
       "endDate": "",
-      "summary": "Active contributor to cloud-native community in Indonesia"
-    },
-    {
-      "organization": "AWS User Group Indonesia",
-      "position": "Community Member",
-      "url": "",
-      "startDate": "2020-01-01",
-      "endDate": "",
-      "summary": "Sharing knowledge and best practices for AWS"
-    },
-    {
-      "organization": "Google Developers",
-      "position": "Community Member",
-      "url": "",
-      "startDate": "2020-01-01",
-      "endDate": "",
-      "summary": "Active in Google Developer community"
+      "summary": "Organizing cloud-native community events"
     },
     {
       "organization": "BlankOn Linux Indonesia",
@@ -140,251 +149,24 @@
       "summary": "Contributed to Indonesian Linux distribution infrastructure"
     }
   ],
-  "education": [
-    {
-      "institution": "Universitas Gadjah Mada",
-      "location": "Yogyakarta, Indonesia",
-      "url": "https://ugm.ac.id/",
-      "area": "Software Engineering Technology",
-      "studyType": "S.Tr.Kom",
-      "startDate": "2019-07-01",
-      "endDate": "2023-02-01",
-      "score": "3.84/4.00"
-    }
-  ],
-  "awards": [
-    {
-      "title": "AWS Container Hero",
-      "date": "2023-01-01",
-      "awarder": "Amazon Web Services",
-      "summary": "Recognized for contributions to AWS container community (2023 - present)"
-    },
-    {
-      "title": "Google Developer Expert - Cloud Modern Architecture",
-      "date": "2023-01-01",
-      "awarder": "Google",
-      "summary": "Recognized expertise in Google Cloud and modern architecture (2023 - present)"
-    },
-    {
-      "title": "CNCF Ambassador",
-      "date": "2023-01-01",
-      "awarder": "Cloud Native Computing Foundation",
-      "summary": "Ambassador for cloud-native technologies (2023 - 2024)"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "HashiCorp Certified: Terraform Associate (003)",
-      "issuer": "HashiCorp",
-      "icon": "fa-solid fa-cloud"
-    },
-    {
-      "name": "Linux Foundation Certified System Administrator (LFCS)",
-      "issuer": "Linux Foundation",
-      "icon": "fa-brands fa-linux"
-    },
-    {
-      "name": "The Linux Foundation Certified IT Associate (LFCA)",
-      "issuer": "Linux Foundation",
-      "icon": "fa-brands fa-linux"
-    },
-    {
-      "name": "AWS Certified Cloud Practitioner",
-      "issuer": "Amazon Web Services",
-      "icon": "fa-brands fa-aws"
-    },
-    {
-      "name": "AWS Certified Solutions Architect - Associate",
-      "issuer": "Amazon Web Services",
-      "icon": "fa-brands fa-aws"
-    },
-    {
-      "name": "CompTIA Security+ ce Certification",
-      "issuer": "CompTIA",
-      "icon": "fa-solid fa-shield"
-    },
-    {
-      "name": "Google Associate Cloud Engineer",
-      "issuer": "Google Cloud",
-      "icon": "fa-brands fa-google"
-    },
-    {
-      "name": "Google Professional Cloud Architect",
-      "issuer": "Google Cloud",
-      "icon": "fa-brands fa-google"
-    },
-    {
-      "name": "Microsoft Azure Fundamentals (AZ-900)",
-      "issuer": "Microsoft",
-      "icon": "fa-brands fa-microsoft"
-    },
-    {
-      "name": "Microsoft Azure Administrator Associate (AZ-104)",
-      "issuer": "Microsoft",
-      "icon": "fa-brands fa-microsoft"
-    },
-    {
-      "name": "Oracle Cloud Infrastructure Foundations Associate",
-      "issuer": "Oracle",
-      "icon": "fa-solid fa-database"
-    },
-    {
-      "name": "Oracle Cloud Infrastructure Cloud Operations Associate",
-      "issuer": "Oracle",
-      "icon": "fa-solid fa-database"
-    },
-    {
-      "name": "Alibaba Cloud ACA Security Associate",
-      "issuer": "Alibaba Cloud",
-      "icon": "fa-solid fa-cloud"
-    },
-    {
-      "name": "Alibaba Cloud ACA Cloud Computing",
-      "issuer": "Alibaba Cloud",
-      "icon": "fa-solid fa-cloud"
-    },
-    {
-      "name": "MikroTik Certified (MTCNA, MTCRE, MTCWE, MTCSE, MTCTCE, MTCUME, MTCINE)",
-      "issuer": "MikroTik",
-      "icon": "fa-solid fa-network-wired"
-    },
-    {
-      "name": "LSP TIK Indonesia (Junior Networking)",
-      "issuer": "LSP TIK Indonesia",
-      "icon": "fa-solid fa-network-wired"
-    },
-    {
-      "name": "Certified OpenStack Administrator (COA)",
-      "issuer": "OpenStack Foundation",
-      "icon": "fa-solid fa-server"
-    }
-  ],
   "publications": [],
   "skills": [
-    {
-      "name": "Hardware & Operating Systems",
-      "level": "Expert",
-      "icon": "fa-solid fa-server",
-      "keywords": ["Server, Storage, Network", "Enterprise Linux (RHEL, Ubuntu, SUSE, Oracle Linux)", "Windows Server", "VMware vSphere, vSAN, ESXi"]
-    },
-    {
-      "name": "Networking & Security",
-      "level": "Expert",
-      "icon": "fa-solid fa-network-wired",
-      "keywords": [
-        "Subnetting, TCP/IP, VLANs, Routing & Switching",
-        "Firewalls (Cisco, Mikrotik), VPN, SD-WAN, Zero Trust",
-        "AWS VPC, Transit Gateway, PrivateLink, Direct Connect, AWS WAF",
-        "Azure Firewall, Cloud Armor, Private DNS, Route 53"
-      ]
-    },
-    {
-      "name": "Compute & Containers",
-      "level": "Expert",
-      "icon": "fa-brands fa-docker",
-      "keywords": [
-        "AWS ECS, Fargate, Lambda, EC2 Auto Scaling",
-        "Kubernetes (EKS, K3s, GKE), Docker, Podman, CRI-O, Containerd",
-        "OpenShift, Docker Swarm, Helm"
-      ]
-    },
-    {
-      "name": "Storage & Databases",
-      "level": "Expert",
-      "icon": "fa-solid fa-database",
-      "keywords": [
-        "S3, EBS, EFS, FSx, Glacier",
-        "RDS (PostgreSQL, MySQL), Aurora, DynamoDB, MariaDB, Cloud SQL",
-        "Ceph, GlusterFS, Rook",
-        "AWS Athena, AWS Glue"
-      ]
-    },
-    {
-      "name": "Backup & Disaster Recovery",
-      "level": "Expert",
-      "icon": "fa-solid fa-shield",
-      "keywords": ["AWS Backup, Azure Backup", "GCP Persistent Disk & Cloud SQL snapshots", "Velero"]
-    },
-    {
-      "name": "Observability & Monitoring",
-      "level": "Expert",
-      "icon": "fa-solid fa-chart-line",
-      "keywords": [
-        "AWS CloudWatch, CloudTrail, X-Ray, Trusted Advisor",
-        "Prometheus, Grafana, ELK, StackOps, Datadog",
-        "Azure Monitor, GCP Operations Suite, CloudWatch Synthetics",
-        "OpenTelemetry, Grafana Loki"
-      ]
-    },
-    {
-      "name": "CI/CD & Automation",
-      "level": "Expert",
-      "icon": "fa-solid fa-gears",
-      "keywords": [
-        "Jenkins, GitLab CI/CD, GitHub Actions, ArgoCD",
-        "AWS CodePipeline, CodeBuild, CodeDeploy, CodeStar",
-        "AWS CDK, Pulumi, Terraform, CloudFormation, Ansible, Puppet",
-        "Azure DevOps, Azure Pipelines, Azure Repos, Azure Artifacts"
-      ]
-    },
-    {
-      "name": "Security & DevSecOps",
-      "level": "Expert",
-      "icon": "fa-solid fa-lock",
-      "keywords": [
-        "IAM, KMS, Secrets Manager, Security Hub, GuardDuty",
-        "CodeSCAPE, CloudSCAPE, VAPT remediation, SAST/DAST",
-        "Container image scanning, vulnerability management"
-      ]
-    },
-    {
-      "name": "Service Mesh & API Management",
-      "level": "Advanced",
-      "icon": "fa-solid fa-diagram-project",
-      "keywords": ["Envoy, Istio, Linkerd, AWS App Mesh", "API Gateway (AWS, Azure)"]
-    },
-    {
-      "name": "Windows Administration",
-      "level": "Advanced",
-      "icon": "fa-brands fa-windows",
-      "keywords": ["Active Directory, File & Storage Services, IIS, RDP, WSUS"]
-    },
-    {
-      "name": "Programming & Scripting",
-      "level": "Advanced",
-      "icon": "fa-solid fa-terminal",
-      "keywords": ["Python", "Bash", "Go", "Java"]
-    },
-    {
-      "name": "GovTech Singapore Stacks",
-      "level": "Expert",
-      "icon": "fa-solid fa-building-columns",
-      "keywords": ["GCC 1.0/2.0/+, CStack, StackOps, CloudSCAPE, CodeSCAPE", "TechBiz, TechPass, IM8, SGTS tools, CAM, Splunk"]
-    }
+    {"name": "Hardware & Operating Systems", "level": "Expert", "icon": "fa-solid fa-server", "keywords": ["Server, Storage, Network", "Enterprise Linux (RHEL, Ubuntu, SUSE, Oracle Linux)", "Windows Server", "VMware vSphere, vSAN, ESXi"]},
+    {"name": "Networking & Security", "level": "Expert", "icon": "fa-solid fa-network-wired", "keywords": ["Subnetting, TCP/IP, VLANs, Routing & Switching", "Firewalls (Cisco, Mikrotik), VPN, SD-WAN, Zero Trust", "AWS VPC, Transit Gateway, PrivateLink, Direct Connect, AWS WAF", "Azure Firewall, Cloud Armor, Private DNS, Route 53"]},
+    {"name": "Compute & Containers", "level": "Expert", "icon": "fa-brands fa-docker", "keywords": ["AWS ECS, Fargate, Lambda, EC2 Auto Scaling", "Kubernetes (EKS, K3s, GKE), Docker, Podman, CRI-O, Containerd", "OpenShift, Docker Swarm, Helm"]},
+    {"name": "Storage & Databases", "level": "Expert", "icon": "fa-solid fa-database", "keywords": ["S3, EBS, EFS, FSx, Glacier", "RDS (PostgreSQL, MySQL), Aurora, DynamoDB, MariaDB, Cloud SQL", "Ceph, GlusterFS, Rook", "AWS Athena, AWS Glue"]},
+    {"name": "Backup & Disaster Recovery", "level": "Expert", "icon": "fa-solid fa-shield", "keywords": ["AWS Backup, Azure Backup", "GCP Persistent Disk & Cloud SQL snapshots", "Velero"]},
+    {"name": "Observability & Monitoring", "level": "Expert", "icon": "fa-solid fa-chart-line", "keywords": ["AWS CloudWatch, CloudTrail, X-Ray, Trusted Advisor", "Prometheus, Grafana, ELK, StackOps, Datadog", "Azure Monitor, GCP Operations Suite, CloudWatch Synthetics", "OpenTelemetry, Grafana Loki"]},
+    {"name": "CI/CD & Automation", "level": "Expert", "icon": "fa-solid fa-gears", "keywords": ["Jenkins, GitLab CI/CD, GitHub Actions, ArgoCD", "AWS CodePipeline, CodeBuild, CodeDeploy, CodeStar", "AWS CDK, Pulumi, Terraform, CloudFormation, Ansible, Puppet", "Azure DevOps, Azure Pipelines, Azure Repos, Azure Artifacts"]},
+    {"name": "Security & DevSecOps", "level": "Expert", "icon": "fa-solid fa-lock", "keywords": ["IAM, KMS, Secrets Manager, Security Hub, GuardDuty", "CodeSCAPE, CloudSCAPE, VAPT remediation, SAST/DAST", "Container image scanning, vulnerability management"]},
+    {"name": "Service Mesh & API Management", "level": "Advanced", "icon": "fa-solid fa-diagram-project", "keywords": ["Envoy, Istio, Linkerd, AWS App Mesh", "API Gateway (AWS, Azure)"]},
+    {"name": "Windows Administration", "level": "Advanced", "icon": "fa-brands fa-windows", "keywords": ["Active Directory, File & Storage Services, IIS, RDP, WSUS"]},
+    {"name": "Programming & Scripting", "level": "Advanced", "icon": "fa-solid fa-terminal", "keywords": ["Python", "Bash", "Go", "Java"]},
+    {"name": "GovTech Singapore Stacks", "level": "Expert", "icon": "fa-solid fa-building-columns", "keywords": ["GCC 1.0/2.0/+, CStack, StackOps, CloudSCAPE, CodeSCAPE", "TechBiz, TechPass, IM8, SGTS tools, CAM, Splunk"]}
   ],
   "languages": [
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    },
-    {
-      "language": "Indonesian",
-      "fluency": "Native speaker",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Cloud Native",
-      "icon": "fa-solid fa-cloud",
-      "keywords": ["Kubernetes", "Serverless", "Microservices", "Service Mesh"]
-    },
-    {
-      "name": "DevOps & SRE",
-      "icon": "fa-solid fa-gears",
-      "keywords": ["Platform Engineering", "GitOps", "Observability", "Automation"]
-    }
+    {"language": "English", "fluency": "Fluent", "icon": ""},
+    {"language": "Indonesian", "fluency": "Native speaker", "icon": ""}
   ],
   "references": [],
   "projects": []
