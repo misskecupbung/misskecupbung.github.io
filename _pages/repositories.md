@@ -53,39 +53,6 @@ nav_order: 4
 {% if site.data.github_repos_data and site.data.github_repos_data.size > 0 %}
 
 <!-- Featured Repos Section -->
-<div class="featured-section mb-5">
-  <h2 class="section-title"><i class="fa-solid fa-star me-2"></i>Featured Projects</h2>
-  <div class="row row-cols-1 row-cols-md-2 g-4" id="featuredRepos">
-    {% assign featured_repos = "aws-openvpn-stack,rhel-ansible-terraform-infra" | split: "," %}
-    {% for repo in site.data.github_repos_data %}
-      {% if featured_repos contains repo.name %}
-      <div class="col">
-        <div class="card h-100 repo-card featured-card">
-          <div class="card-body d-flex flex-column">
-            <div class="featured-badge"><i class="fa-solid fa-trophy"></i> Featured</div>
-            <h5 class="card-title">
-              <a href="{{ repo.html_url }}" target="_blank">
-                <i class="fa-brands fa-github me-1"></i> {{ repo.name }}
-              </a>
-            </h5>
-            <p class="card-text text-muted flex-grow-1">{{ repo.description | default: "No description available" }}</p>
-            <div class="d-flex justify-content-between align-items-center mt-auto">
-              <div class="repo-stats">
-                <span class="repo-stat"><i class="fa-solid fa-star"></i> {{ repo.stargazers_count }}</span>
-                <span class="repo-stat"><i class="fa-solid fa-code-fork"></i> {{ repo.forks_count }}</span>
-              </div>
-              {% if repo.language %}
-              <span class="badge language-badge" data-language="{{ repo.language }}">{{ repo.language }}</span>
-              {% endif %}
-            </div>
-          </div>
-        </div>
-      </div>
-      {% endif %}
-    {% endfor %}
-  </div>
-</div>
-
 <!-- Search and Filter Controls -->
 <div class="controls-section mb-4">
   <div class="row g-3 align-items-center">
