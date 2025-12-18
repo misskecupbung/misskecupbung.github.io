@@ -183,7 +183,7 @@
 - filename: deploy-php-application-aws-elastic-beanstalk.pdf
   title: Deploy a PHP Application using AWS Elastic Beanstalk
   date: 2021-12-22
-  event: PHP Community Indonesia Meetup
+  event: PHP Community Indonesia Meetup - Online Editions
 
 - filename: create-aws-codecommit-trigger-lambda-function.pdf
   title: Create an AWS CodeCommit Trigger for an AWS Lambda Function
