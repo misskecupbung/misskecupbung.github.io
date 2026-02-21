@@ -21,12 +21,12 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Cloud & DevOps Engineer (Cloud File Transfer Product)
-      institution: ACP Group (Outsourced to GovTech Singapore)
+    - title: Cloud & DevOps Engineer
+      institution: ACP Group (Outsourced to GovTech Singapore) | Government Digital Product (GDP) > Data Programme
       year: Oct 2024 - Present
       location: Singapore, SG
       description:
-        - Operated AWS infrastructure across dev, UAT, and production for a government file transfer platform.
+        - "**Product:** Cloud File Transfer Product – Operated AWS infrastructure across dev, UAT, and production for a secure, scalable government file transfer platform."
         - Migrated legacy infrastructure to AWS using Terraform and Pulumi, reducing provisioning time from days to hours.
         - Built observability stack (CloudWatch, X-Ray, ELK, Synthetics), reducing mean-time-to-resolution for production incidents.
         - Developed GitLab CI/CD pipelines with drift detection, security validation, and approval gates.
