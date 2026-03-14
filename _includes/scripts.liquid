@@ -325,3 +325,18 @@
 {% if site.newsletter.enabled %}
   <script defer src="{{ '/assets/js/newsletter.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
+
+{% if site.calendly_url %}
+  <!-- Calendly badge widget -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <script type="text/javascript">
+    window.addEventListener('load', function() {
+      Calendly.initBadgeWidget({
+        url: '{{ site.calendly_url }}',
+        text: 'Book a Brown Bag Chat ☕',
+        color: '#0069ff',
+        textColor: '#ffffff'
+      });
+    });
+  </script>
+{% endif %}
