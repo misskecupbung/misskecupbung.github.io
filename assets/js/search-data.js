@@ -51,7 +51,62 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gallery/";
           },
-        },{id: "post-aws-summit-singapore-2024-it-was-an-awsome-event",
+        },{id: "post-connecting-cloud-run-to-cloud-sql-without-going-through-the-public-internet",
+        
+          title: 'Connecting Cloud Run to Cloud SQL Without Going Through the Public Internet <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/google-cloud/connecting-cloud-run-to-cloud-sql-without-going-through-the-public-internet-5268c8e4cbb9?source=rss-4dd39a6b908a------2", "_blank");
+          
+        },
+      },{id: "post-understanding-vpc-peering-and-non-transitive-routing-in-gcp",
+        
+          title: 'Understanding VPC Peering and Non-Transitive Routing in GCP <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/google-cloud/understanding-vpc-peering-and-non-transitive-routing-in-gcp-980d0d4d2cf9?source=rss-4dd39a6b908a------2", "_blank");
+          
+        },
+      },{id: "post-build-a-mobile-api-backend-with-gcp-cloud-endpoints-and-app-engine",
+        
+          title: 'Build a Mobile API Backend with GCP Cloud Endpoints and App Engine <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://misskecupbung.medium.com/build-a-mobile-api-backend-with-gcp-cloud-endpoints-and-app-engine-d647b900abbe?source=rss-4dd39a6b908a------2", "_blank");
+          
+        },
+      },{id: "post-build-your-own-disaster-recovery-on-gcp-cold-standby-architecture",
+        
+          title: 'Build Your Own Disaster Recovery on GCP: Cold Standby Architecture <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/google-cloud/build-your-own-disaster-recovery-on-gcp-cold-standby-architecture-fa86f53c164b?source=rss-4dd39a6b908a------2", "_blank");
+          
+        },
+      },{id: "post-mlops-pipeline-with-vertex-ai-and-cloud-deploy-on-google-cloud",
+        
+          title: 'MLOps Pipeline with Vertex AI and Cloud Deploy on Google Cloud <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/google-cloud/mlops-pipeline-with-vertex-ai-and-cloud-deploy-on-google-cloud-81b63e2707bc?source=rss-4dd39a6b908a------2", "_blank");
+          
+        },
+      },{id: "post-aws-summit-singapore-2024-it-was-an-awsome-event",
         
           title: 'AWS Summit Singapore 2024: It was An AWSome Event! <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
