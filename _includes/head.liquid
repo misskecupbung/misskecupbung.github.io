@@ -49,15 +49,16 @@
   <!-- Calendly badge widget -->
   <link defer rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
   <style>
-    @keyframes calendly-pulse {
-      0%   { box-shadow: 0 0 0 0 rgba(232, 93, 4, 0.6); }
-      70%  { box-shadow: 0 0 0 10px rgba(232, 93, 4, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(232, 93, 4, 0); }
-    }
     .calendly-badge-widget .calendly-badge-content {
-      animation: calendly-pulse 2s ease-in-out infinite;
       font-weight: 600 !important;
       letter-spacing: 0.02em !important;
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease !important;
+    }
+    .calendly-badge-widget .calendly-badge-content:hover {
+      transform: translateY(-2px) !important;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18) !important;
     }
   </style>
 {% endif %}

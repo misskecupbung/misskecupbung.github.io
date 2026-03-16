@@ -30,6 +30,12 @@ latest_posts:
     <p class="hero-intro">Hi, I'm Ananda Dwi Rahmawati — a Cloud and DevOps Engineer passionate about building scalable, secure, and automated infrastructure.</p>
     <p class="hero-description">With experience across AWS, Google Cloud, and Azure, I specialize in Kubernetes orchestration, infrastructure as code, and CI/CD pipelines. I'm also an active speaker at cloud conferences and community events.</p>
     <p class="hero-description">When I'm not building infrastructure, you'll find me contributing to open source projects and sharing knowledge through technical talks and blog posts.</p>
+    <div class="hero-cta">
+      <p class="hero-cta-text">Interested in cloud, DevOps, or community collaboration?</p>
+      <a href="https://calendly.com/misskecupbung/brown-bag-chat" target="_blank" class="hero-cta-btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/misskecupbung/brown-bag-chat'});return false;">
+        <i class="fa-regular fa-calendar"></i> Book a Brown Bag Chat
+      </a>
+    </div>
   </div>
   <div class="hero-right">
     <img src="/assets/img/ananda.png" alt="Ananda Dwi Rahmawati" class="hero-image">
@@ -193,5 +199,44 @@ a.highlight-card:hover {
   font-size: 0.8rem;
   color: var(--global-text-color-light);
   margin: 0;
+}
+
+.hero-cta {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.hero-cta-text {
+  font-size: 0.95rem;
+  color: var(--global-text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+.hero-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--global-theme-color);
+  color: #fff !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.hero-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  background: var(--global-hover-color);
+}
+
+@media (max-width: 768px) {
+  .hero-cta {
+    text-align: center;
+  }
 }
 </style>
