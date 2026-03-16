@@ -327,16 +327,6 @@
 {% endif %}
 
 {% if site.calendly_url %}
-  <!-- Calendly badge widget -->
+  <!-- Calendly popup widget -->
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script type="text/javascript">
-    window.addEventListener('load', function () {
-      Calendly.initBadgeWidget({
-        url: '{{ site.calendly_url }}',
-        text: 'Book a Brown Bag Chat ☕',
-        color: '#e85d04',
-        textColor: '#ffffff',
-      });
-    });
-  </script>
 {% endif %}

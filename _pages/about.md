@@ -31,7 +31,7 @@ latest_posts:
     <p class="hero-description">With experience across AWS, Google Cloud, and Azure, I specialize in Kubernetes orchestration, infrastructure as code, and CI/CD pipelines. I'm also an active speaker at cloud conferences and community events.</p>
     <p class="hero-description">When I'm not building infrastructure, you'll find me contributing to open source projects and sharing knowledge through technical talks and blog posts.</p>
     <div class="hero-cta">
-      <p class="hero-cta-text">Interested in cloud, DevOps, or community collaboration?</p>
+      <p class="hero-cta-text">Want to chat about careers, community collaboration, or technical topics?</p>
       <a href="https://calendly.com/misskecupbung/brown-bag-chat" target="_blank" class="hero-cta-btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/misskecupbung/brown-bag-chat'});return false;">
         <i class="fa-regular fa-calendar"></i> Book a Brown Bag Chat
       </a>
