@@ -51,7 +51,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gallery/";
           },
-        },{id: "post-connecting-cloud-run-to-cloud-sql-without-going-through-the-public-internet",
+        },{id: "post-accessing-google-apis-privately-with-private-service-connect",
+        
+          title: 'Accessing Google APIs Privately with Private Service Connect <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/google-cloud/accessing-google-apis-privately-with-private-service-connect-20ff934808fd?source=rss-4dd39a6b908a------2", "_blank");
+          
+        },
+      },{id: "post-connecting-cloud-run-to-cloud-sql-without-going-through-the-public-internet",
         
           title: 'Connecting Cloud Run to Cloud SQL Without Going Through the Public Internet <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
